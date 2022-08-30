@@ -46,7 +46,7 @@ Create date :
 
 #header .gnb-wrap {
   position: relative;
-  z-index: 10;
+  z-index: 9;
 }
 
 #header .gnb-wrap nav {
