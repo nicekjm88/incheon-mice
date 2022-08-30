@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*-------------------------------------------------
+Author : 김지만
+Create date : 2018-07-09
+중부대학교 건축/토목공학부
+-------------------------------------------------*/
+#contents .section1 .cont-top .shortcut .photo{background:url("../../images/aed/main/bg_depart-intro.jpg") 0 0 no-repeat}
+
+.total-intro .summary{background: url(../../images/aed/sub/bg_summary.jpg) right top no-repeat; height:300px;}
+.total-intro .goal-list > li:nth-child(1) .inner{background-image: url(../../images/aed/sub/bg_goal1.jpg);}
+.total-intro .goal-list > li:nth-child(2) .inner{background-image: url(../../images/aed/sub/bg_goal2.jpg);}
+
+
+
+.depart-intro.depart1 .introduce { background-image: url(../../images/aed/sub/bg_depart1.jpg); }
+.depart-intro .card-list > li .card{height:200px;}
+.depart-intro.depart2 .introduce { background-image: url(../../images/aed/sub/bg_depart2.jpg); }

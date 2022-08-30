@@ -1,0 +1,61 @@
+$main-color1:#960c1d;
+
+@mixin vert-mid{position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);}
+
+@function calcFont($size) {
+  $rem: $size /16px;
+  @return $rem * 1rem;
+}
+@mixin font($size) {font-size:calcFont($size)}
+
+@function cp($target, $container) {
+  @return ($target / $container) * 100%;
+}
+
+@mixin shape($width,$height,$bg){
+	content:""; width:$width; height:$height; background-color:$bg;
+}
+
+@mixin clear{
+	display:block; content:""; clear:both;
+}
+
+@mixin edge-under($color,$size){
+	content:"";	border-color:$color transparent transparent transparent;
+  border-width:$size; border-style: solid;
+}
+@mixin edge-back($color,$size){
+	content:"";	border-color: transparent $color transparent transparent;
+  border-width:$size; border-style: solid;
+}
+@mixin edge-top($color,$size){
+	content:"";	border-color: transparent transparent $color transparent ;
+  border-width:$size; border-style: solid;
+}
+@mixin edge-front($color,$size){
+	content:"";	border-color: transparent transparent transparent $color;
+  border-width:$size; border-style: solid;
+}
+
+@mixin ellipsis($truncation-boundary){
+	max-width: $truncation-boundary;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+
+@mixin serif{font-family: 'Iropke Batang', serif;}
+
+/////////////////////////
+//자주사용하는 애니메이션//
+////////////////////////
+@mixin fade-before($speed,$x,$y){
+	transition:all $speed ease;
+	opacity:0;
+	transform:translate($x,$y);
+}
+
+@mixin fade-after($x,$y){
+	opacity:1;
+	transform:translate($x,$y);
+}

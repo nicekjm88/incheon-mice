@@ -1,0 +1,56 @@
+@charset "utf-8";
+/*-------------------------------------------------
+Author : siin
+Create date : 2018-07-09
+중부대학교 보건복지학부
+-------------------------------------------------*/
+
+/* 메인 */
+.section5 {background:url("../../images/hwd/main/bg_section5.jpg") center center /cover no-repeat}
+.section5 .info li:nth-child(1) .title {background-image:url("../../images/hwd/main/i_info1.png");}
+.section5 .info li:nth-child(2) .title {background-image:url("../../images/hwd/main/i_info2.png");}
+.section5 .info li:nth-child(3) .title {background-image:url("../../images/hwd/main/i_info3.png");}
+.section5 .info li:nth-child(4) .title {background-image:url("../../images/hwd/main/i_info4.png");}
+.section5 .info li:nth-child(5) .title {background-image:url("../../images/hwd/main/i_info5.png");}
+.section5 .info li:nth-child(6) .title {background-image:url("../../images/hwd/main/i_info6.png");}
+.section5 .info li:nth-child(7) .title {background-image:url("../../images/hwd/main/i_info7.png");}
+
+
+
+/* 학부소개 */
+.total-intro .goal-list {margin: 0 0 60px;}
+.total-intro .goal-list .inner {background:url("../../images/hwd/sub/bg_goal1.jpg") center top no-repeat; padding:210px 50px 0; position:relative;}
+.total-intro .goal-list .inner .title {position:absolute; top:85px; left:0; text-align:center; color:#fff; width: 100%; padding: 0 15%; font-size:3.0rem; word-break:keep-all; line-height: 1.5;}
+.total-intro .goal-list .inner .txt {border:0; background:#fff; padding:30px 0; text-align:center;}
+.total-intro .goal-list .inner .txt .desc {font-size:1.8rem; font-weight:300; padding: 0 15px;}
+.total-intro .card-list > li .card {height: 150px;}
+
+
+/* 전공소개 */
+.depart-intro.depart1 .introduce {background: url("../../images/hwd/sub/bg_depart1.jpg") center top no-repeat;}
+.depart-intro.depart2 .introduce {background: url("../../images/hwd/sub/bg_depart2.jpg") center top no-repeat;}
+.depart-intro.depart3 .introduce {background: url("../../images/hwd/sub/bg_depart3.jpg") center top no-repeat;}
+.depart-intro.depart4 .introduce {background: url("../../images/hwd/sub/bg_depart4.jpg") center top no-repeat;}
+.depart-intro.depart5 .introduce {background: url("../../images/hwd/sub/bg_depart5.jpg") center top no-repeat;}
+.depart-intro.depart6 .introduce {background: url("../../images/hwd/sub/bg_depart6.jpg") center top no-repeat;}
+.depart-intro.depart7 .introduce {background: url("../../images/hwd/sub/bg_depart7.jpg") center top no-repeat;}
+
+.depart-intro.depart1 .card-list > li .card {height: 200px;}
+.depart-intro.depart2 .card-list > li .card {height: 340px;}
+.depart-intro.depart3 .card-list > li .card {height: 250px;}
+.depart-intro.depart4 .card-list > li .card {height: 200px;}
+.depart-intro.depart5 .card-list > li .card {height: 240px;}
+.depart-intro.depart6 .card-list > li .card {height: 350px;}
+.depart-intro.depart7 .card-list > li .card {height: 220px;}
+.depart-intro .card-list > li .card p em {font-weight:400;}
+.depart-intro .list.dot > li {word-break:keep-all;}
+
+
+
+@media (max-width:767px) {
+  /* 메인비주얼 */
+  #visual .visual-slide > li:nth-child(1) {background-image:url('../../images/hwd/main/img_mv01_m.jpg');}
+  #visual .visual-slide > li:nth-child(2) {background-image:url('../../images/hwd/main/img_mv02_m.jpg');}
+
+
+}

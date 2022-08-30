@@ -1,0 +1,28 @@
+@charset "utf-8";
+/*-------------------------------------------------
+Author : 김지만
+Create date : 2018-07-09
+중부대학교 바이오융합학부
+-------------------------------------------------*/
+.depart-intro{
+  &.depart1{
+    .introduce{background-image:url(../../images/bfd/sub/bg_depart1.jpg);}
+  }
+  &.depart2{
+    .introduce{background-image:url(../../images/bfd/sub/bg_depart2.jpg);}
+  }
+  &.depart3{
+    .introduce{background-image:url(../../images/bfd/sub/bg_depart3.jpg);}
+  }
+  &.depart4{
+    .introduce{background-image:url(../../images/bfd/sub/bg_depart4.jpg);}
+  }
+  &.depart5{
+    .introduce{background-image:url(../../images/bfd/sub/bg_depart5.jpg);}
+    .card-list{
+      &>li{
+        .card{height:inherit;}
+      }
+    }
+  }
+}

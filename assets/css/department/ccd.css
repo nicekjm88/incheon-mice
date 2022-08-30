@@ -1,0 +1,68 @@
+@charset "utf-8";
+/*-------------------------------------------------
+Author : siin
+Create date : 2018-07-10
+중부대학교 문화컨텐츠학부
+-------------------------------------------------*/
+
+/* 메인 */
+.section5 {background:url("../../images/ccd/main/bg_section5.jpg") center center /cover no-repeat}
+.section5 .info li:nth-child(1) .title {background-image:url("../../images/ccd/main/i_info1.png");}
+.section5 .info li:nth-child(2) .title {background-image:url("../../images/ccd/main/i_info2.png");}
+.section5 .info li:nth-child(3) .title {background-image:url("../../images/ccd/main/i_info3.png"); padding: 70px 0;}
+.section5 .info li:nth-child(4) .title {background-image:url("../../images/ccd/main/i_info4.png");}
+.section5 .info li:nth-child(5) .title {background-image:url("../../images/ccd/main/i_info5.png");}
+
+
+
+/* 학부소개 */
+.total-intro .goal-list {margin: 0 0 100px;}
+.total-intro .goal-list .inner {background:url("../../images/ccd/sub/bg_goal1.jpg") center top no-repeat; padding:210px 50px 0; position:relative;}
+.total-intro .goal-list .inner .title {position:absolute; top:55px; left:0; text-align:center; color:#fff; width: 100%; padding: 0 15%; word-break:keep-all; line-height: 1.5;}
+.total-intro .goal-list .inner .title strong {font-size:3.0rem; padding-bottom: 15px; display: block;}
+.total-intro .goal-list .inner .title p {font-size:2.0rem; word-break:keep-all; line-height: 1.56; font-weight: 300;}
+.total-intro .goal-list .inner .txt {border:0; background:#fff; padding:30px 60px; text-align:center;}
+.total-intro .goal-list .inner .txt .desc {font-size:1.8rem; font-weight:300; padding: 0 15px; word-break:keep-all; text-align:left;}
+.total-intro .row {margin: 0 -30px;}
+.total-intro .row > div {padding:0 30px; margin-bottom: 100px;}
+.total-intro .img {background:url("../../images/ccd/sub/bg_goal2.jpg") center top/cover no-repeat; padding: 70px 35px; color:#fff; text-align:center; height: 276px;}
+.total-intro .img strong {font-size:3.0rem; margin-bottom: 30px; display:block;}
+.total-intro .img p {font-size:2.0rem; line-height: 1.5;}
+.total-intro .card-list > li .card {height: 210px; text-align:center; padding: 40px;}
+.total-intro .list.box>li {width: 33.333%;}
+.total-intro .list.box>li:nth-child(even) {border-right:1px solid #ddd;}
+
+
+/* 전공소개 */
+.depart-intro.depart1 .introduce {background: url("../../images/ccd/sub/bg_depart1.jpg") center top no-repeat;}
+.depart-intro.depart2 .introduce {background: url("../../images/ccd/sub/bg_depart2.jpg") center top no-repeat;}
+.depart-intro.depart3 .introduce {background: url("../../images/ccd/sub/bg_depart3.jpg") center top no-repeat;}
+
+.depart-intro.depart1 .introduce .list.dot {margin-top: 30px;}
+
+.depart-intro.depart1 .card-list > li .card {height: 170px;}
+.depart-intro.depart2 .card-list > li .card {height: 130px;}
+.depart-intro.depart3 .card-list > li .card {height: 260px;}
+
+
+
+@media (max-width:992px) {
+  .total-intro .list.box>li {width: 100%;}
+}
+
+
+@media (max-width:767px) {
+  /* 메인비주얼 */
+  #visual .visual-slide > li:nth-child(1) {background-image:url('../../images/ccd/main/img_mv01_m.jpg');}
+  #visual .visual-slide > li:nth-child(2) {background-image:url('../../images/ccd/main/img_mv02_m.jpg');}
+
+  .total-intro .goal-list .inner .txt {padding: 30px 20px;}
+  .total-intro .goal-list .inner .title strong {font-size:2.2rem;}
+  .total-intro .goal-list .inner .title p {font-size:1.6rem;}
+  .total-intro .goal-list .inner .txt .desc br {display:none;}
+  .total-intro .img strong {font-size:2.5rem;}
+  .total-intro .img p {font-size:1.6rem;}
+  .total-intro .card-list > li .card  {padding: 30px;}
+
+
+}
