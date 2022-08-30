@@ -284,6 +284,19 @@ Create date : May.31.2018
   margin: 0 auto;
 }
 
+.contents-title {
+  font-size: 6.5rem;
+  font-family: "IncheonMICE";
+  font-weight: 900;
+  line-height: 1;
+}
+
+.contents-title + p {
+  margin-top: 20px;
+  font-size: 2.2rem;
+  color: #555;
+}
+
 /* 로그인 */
 .area-login {
   padding-top: 128px;
