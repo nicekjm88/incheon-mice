@@ -2,51 +2,144 @@
 Author : 
 Create date : 
 -------------------------------------------------*/
-@import url(e:\Study\incheon\assets\css\grid.min.css);
+@import url(c:\Users\5000w\Documents\workspace\sidejob\incheon-mice\assets\css\grid.min.css);
 *:lang(en) {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#wrap.intro #header {
+  top: 0;
 }
 
 #header {
   position: fixed;
-  top: 0;
+  top: -116px;
   left: 0;
-  border-bottom: 1px solid #eaeaea;
   z-index: 99;
   width: 100%;
   height: 116px;
   background-color: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#header::before {
+  content: "";
+  width: 100%;
+  height: 116px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-bottom: 1px solid #eaeaea;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #header h1 {
   position: absolute;
   top: 24px;
   left: 130px;
+  z-index: 10;
 }
 
-#header .gnb nav {
-  font-family: 'S-CoreDream';
+#header .gnb-wrap {
+  position: relative;
+  z-index: 10;
+}
+
+#header .gnb-wrap nav {
+  width: 960px;
+  margin: 0 auto;
   font-weight: 500;
   text-align: center;
   font-size: 2.3rem;
   padding-top: 40px;
 }
 
-#header .gnb nav ul > li {
+#header .gnb-wrap nav .gnb > li {
+  position: relative;
   display: inline-block;
   text-align: center;
   margin: 0 40px;
 }
 
-#header .gnb .utils {
+#header .gnb-wrap nav .gnb > li > .menu-label {
+  font-family: "S-CoreDream";
+}
+
+#header .gnb-wrap nav .gnb > li .depth2 {
+  opacity: 0;
+  visibility: hidden;
+  min-height: 0;
   position: absolute;
-  top: 24px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  top: 100px;
+  width: calc(960px / 5);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#header .gnb-wrap nav .gnb > li .depth2 > li {
+  display: block;
+  font-size: 1.8rem;
+  color: #555;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+#header .gnb-wrap nav .gnb > li .depth2 > li > a:hover {
+  font-weight: 700;
+  color: #006064;
+}
+
+#header .gnb-wrap nav .gnb > li.is-active > .menu-label {
+  color: #006064;
+}
+
+#header .gnb-wrap .utils {
+  position: absolute;
+  top: 45px;
   right: 130px;
   overflow: hidden;
 }
 
-#header .gnb .utils > li {
+#header .gnb-wrap .utils > li {
   float: left;
+  margin: 0 20px;
+}
+
+#header::after {
+  content: "";
+  width: 100%;
+  height: 115px;
+  background-color: #fff;
+  position: absolute;
+  top: -115px;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+#header.is-active::before {
+  border-bottom-color: #7eaeb0;
+}
+
+#header.is-active::after {
+  top: 116px;
+  height: 200px;
+}
+
+#header.is-active .gnb-wrap nav .gnb > li .depth2 {
+  opacity: 1;
+  visibility: visible;
+  min-height: inherit;
 }
 
 #footer {

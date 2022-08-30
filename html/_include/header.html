@@ -1,45 +1,83 @@
-<!-- <div class="container">
-  <div class="row">
-    <div class="col-md-2">
-      
-    </div>
-    <div class="col-md-10">
-
-    </div>    
-  </div>
-</div> -->
-
 <h1>
   <a href="index.html">
-    <img src="../../assets/images/logo.gif" alt="인천 - 세계에서 가장 가까운 마이스 특별시">
+    <img src="../assets/images/logo.gif" alt="인천 - 세계에서 가장 가까운 마이스 특별시">
   </a>
 </h1>
 
-<div class="gnb">
+<div class="gnb-wrap">
   <nav>
-    <ul>
-      <li><a href="#">Why 인천</a></li>
-      <li><a href="#">MICE 인프라</a></li>
-      <li><a href="#">MICE 지원</a></li>
-      <li><a href="#">커뮤니티</a></li>
-      <li><a href="#">인천CVB</a></li>
+    <ul class="gnb">
+      <li>
+        <a href="#" class="menu-label">Why 인천</a>
+        <ul class="depth2">
+          <li><a href="#">Top Reasons</a></li>
+          <li><a href="#">성공사례</a></li>
+          <li><a href="#">제안신청</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="menu-label">MICE 인프라</a>
+        <ul class="depth2">
+          <li><a href="#">베뉴검색</a></li>
+          <li><a href="#">얼라이언스</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="menu-label">MICE 지원</a>
+        <ul class="depth2">
+          <li><a href="#">국내/국제회의</a></li>
+          <li><a href="#">기업회의/인센티브</a></li>
+          <li><a href="#">지원신청</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="menu-label">커뮤니티</a>
+        <ul class="depth2">
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">뉴스레터</a></li>
+          <li><a href="#">홍보자료</a></li>
+          <li><a href="#">보고서</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="menu-label">인천CVB</a>
+        <ul class="depth2">
+          <li><a href="#">MICE뷰로</a></li>
+          <li><a href="#">MICE지원센터</a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
 
   <ul class="utils">
-    <li>
-      <a href="#">로그인</a>
+    <li class="my-page">
+      <a href="#"><img src="../assets/images/i_login.gif" alt="마이페이지"></a>
     </li>
-    <li>
-      <a href="#">언어변경</a>
+    <li class="language">
+      <a href="#"><img src="../assets/images/i_language.gif" alt="언어변경"></a>
     </li>
-    <li>
+    <li class="menu">
       <a href="#">대매뉴</a>
     </li>
   </ul>
 </div>
 
+<script>
+  //대매뉴
+  $(".gnb").on("mouseenter focusin", function () {
+    $(this).parents("#header").addClass("is-active");
+  });
 
+  $("#header").on("mouseleave", function () {
+    $(this).removeClass("is-active");
+  });
 
+  $('.gnb > li').on('mouseenter focusin', function () {
+    $(this).addClass('is-active')
+  })
 
+  $('.gnb > li').on('mouseleave', function () {
+    $(this).removeClass('is-active')
+  })
 
+</script>

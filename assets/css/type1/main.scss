@@ -3,16 +3,16 @@
 Author : 
 Create date : 
 -------------------------------------------------*/
-@import '../mixin';
+@import "../mixin";
 
 #contents {
   section {
-
     &.section1 {
       height: 100vh;
 
       .banner {
         position: relative;
+        bottom: 0;
         width: 100%;
         height: 100vh;
         overflow: hidden;
@@ -25,7 +25,7 @@ Create date :
           height: 100%;
           object-fit: cover;
         }
-    
+
         .overlay-text {
           padding-top: 50px;
           position: absolute;
@@ -43,10 +43,14 @@ Create date :
           text-transform: uppercase;
           background-color: #ffffff;
           mix-blend-mode: screen;
-          
 
           strong {
             line-height: 1;
+            opacity: 0;
+            transition: all 1s ease;
+            transition-delay: 0.5s;
+            position: relative;
+            top: 30px;
 
             em {
               font-size: 18rem;
@@ -54,28 +58,44 @@ Create date :
             }
 
             font-size: 32rem;
-            font-family: 'S-CoreDream';
+            font-family: "S-CoreDream";
             font-weight: 900;
             letter-spacing: -2rem;
           }
 
           p {
+            opacity: 0;
+            transition: all 1s ease;
+            transition-delay: 0.7s;
+            position: relative;
+            top: 30px;
             margin-top: 70px;
             font-size: 3.5rem;
-            font-family:'IncheonMICE';
+            font-family: "IncheonMICE";
             font-weight: 500;
-            
-            strong  {
+
+            strong {
               letter-spacing: 0;
               font-size: 4.7rem;
               display: inline-block;
               margin-bottom: 20px;
-              font-family:'IncheonMICE';
+              font-family: "IncheonMICE";
             }
-            
           }
         }
+      }
 
+      &.fade-in {
+        .banner {
+          strong {
+            opacity: 1;
+            top: 0;
+          }
+          p {
+            opacity: 1;
+            top: 0;
+          }
+        }
       }
     }
 
@@ -86,41 +106,134 @@ Create date :
 
       .slogan {
         font-size: 8rem;
-        font-family:'IncheonMICE';
+        font-family: "IncheonMICE";
         color: #707070;
         font-weight: 400;
         letter-spacing: -2px;
 
+        > span {
+          transition: all 1s ease;
+          position: relative;
+          left: -30px;
+          opacity: 0;
+          display: block;
+
+          &:nth-child(1) {
+            transition-delay: 0.3s;
+          }
+
+          &:nth-child(2) {
+            transition-delay: 0.5s;
+          }
+
+          &:nth-child(3) {
+            transition-delay: 0.7s;
+          }
+
+          &:nth-child(4) {
+            transition-delay: 0.9s;
+          }
+        }
+
         strong {
           font-weight: 700;
           color: #000;
+          position: relative;
+
+          span {
+            position: relative;
+            z-index: 2;
+          }
+
+          &::before {
+            content: "";
+            background: url("../../images/bg_circle.gif") 0 0 no-repeat;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 0;
+            right: -40px;
+          }
+
+          &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 24px;
+            background-color: #5cc2cf;
+            z-index: 1;
+          }
         }
       }
 
       .desc {
+        transition: all 1s ease;
+        opacity: 0;
         padding-top: 370px;
-        background: url('../../images/bg_section2.jpg') 0 0 no-repeat;
+        background: url("../../images/bg_section2.jpg") 0 0 no-repeat;
         color: #000;
         font-size: 3rem;
-        font-family:'IncheonMICE';
+        font-family: "IncheonMICE";
         font-weight: 400;
 
         &-title {
+          transition: all 1s ease;
+          transition-delay: 0.3s;
+          position: relative;
+          bottom: -30px;
+          opacity: 0;
           font-weight: 700;
           font-size: 4.5rem;
           margin-bottom: 30px;
           display: block;
         }
 
+        p {
+          transition: all 1s ease;
+          transition-delay: 0.5s;
+          position: relative;
+          bottom: -30px;
+          opacity: 0;
+          line-height: 1.6;
+        }
+
         &-btn {
+          transition: all 1s ease;
+          transition-delay: 0.7s;
+          position: relative;
+          bottom: -30px;
+          opacity: 0;
           margin-top: 40px;
           width: 275px;
           height: 85px;
           border: 1px solid #707070;
           padding: 0 30px;
           text-align: left;
-          background: url('../../images/bg_btn_arr.gif') 90% center no-repeat #f5f5f5;
+          background: url("../../images/bg_btn_arr.gif") 90% center no-repeat
+            #f5f5f5;
           // background-color: #f5f5f5;
+        }
+      }
+
+      &.fade-in {
+        .slogan {
+          > span {
+            opacity: 1;
+            left: 30px;
+          }
+        }
+
+        .desc {
+          opacity: 1;
+
+          &-title,
+          p,
+          &-btn {
+            opacity: 1;
+            bottom: 0;
+          }
         }
       }
     }
@@ -129,8 +242,12 @@ Create date :
       padding-top: 180px;
 
       .slogan {
+        transition: all 1s ease;
+        position: relative;
+        left: -30px;
+        opacity: 0;
         font-size: 8rem;
-        font-family:'IncheonMICE';
+        font-family: "IncheonMICE";
         color: #707070;
         font-weight: 400;
         letter-spacing: -2px;
@@ -152,6 +269,18 @@ Create date :
           left: 50%;
           transform: translate(-50%, -50%);
           z-index: 1;
+          font-size: 2.8rem;
+          line-height: 1;
+          letter-spacing: -0.05em;
+
+          strong {
+            font-weight: 700;
+          }
+
+          i {
+            color: #065863;
+            margin-bottom: 5px;
+          }
         }
 
         .bg {
@@ -160,22 +289,38 @@ Create date :
       }
 
       .contact-us {
+        transition: all 1s ease;
+        position: relative;
+        bottom: -30px;
+        opacity: 0;
         margin-top: 180px;
-        font-family:'IncheonMICE';
+        font-family: "IncheonMICE";
         font-weight: 400;
         font-size: 3rem;
         line-height: 1.4;
 
         .label {
-         color: #006064; 
-         font-size: 4.5rem;
-         font-family:'IncheonMICE';
-         font-weight: 700;
+          color: #006064;
+          font-size: 4.5rem;
+          font-family: "IncheonMICE";
+          font-weight: 700;
+        }
+      }
+
+      &.fade-in {
+        .slogan {
+          opacity: 1;
+          left: 30px;
+        }
+
+        .contact-us {
+          transition-delay: 0.5s;
+          opacity: 1;
+          bottom: 0;
         }
       }
     }
   }
-
 }
 
 @keyframes rotating {
