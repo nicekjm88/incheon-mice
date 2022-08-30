@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*-------------------------------------------------
-Author : 김지만
-Create date : 2018-07-03
+Author : 
+Create date : 
 -------------------------------------------------*/
 /*-------------------------------------------------
 Author : JMKim
@@ -277,223 +277,19 @@ Create date : May.31.2018
   }
 }
 
-#spot {
-  height: 500px;
-  background: url("../../images/bfd/sub/img_sv01.jpg") center top/cover no-repeat;
-  position: relative;
+.wrap-container {
+  padding-top: 116px;
+  height: 100vh;
+  width: 1330px;
+  margin: 0 auto;
 }
 
-#spot .snb-title {
-  color: #fff;
-  font-family: 'Iropke Batang', serif;
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  text-align: center;
-  font-weight: 400;
-  font-size: 3.5rem;
-  margin-top: 55px;
+/* 로그인 */
+.area-login {
+  padding-top: 128px;
 }
 
-#spot .snb-title span {
-  display: block;
-  font-size: 2.0rem;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.cont-wrap {
-  position: relative;
-}
-
-#snb {
-  color: #323232;
-  text-align: center;
-  height: inherit;
-}
-
-#snb .nav-area {
-  background-color: #fff;
-  height: 50px;
-  color: #323232;
-  width: 100%;
-  text-align: left;
-  font-size: 0;
-  border-bottom: 1px solid #e1e1e1;
-}
-
-#snb .nav-area .home {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 50px;
-  width: 230px;
-  height: 50px;
-  font-size: 1.5rem;
-  border-left: 1px solid #e1e1e1;
-  border-right: 1px solid #e1e1e1;
-  padding: 0 30px;
-  position: relative;
-}
-
-#snb .nav-area .home::after {
-  content: "";
-  border-width: 1px 1px 0 0;
-  border-color: #323232;
-  border-style: solid;
-  width: 8px;
-  height: 8px;
-  position: absolute;
-  top: 50%;
-  margin-top: -3px;
-  left: 110px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-#snb .nav-area nav {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-#snb .nav-area .depth1 {
-  font-size: 0;
-}
-
-#snb .nav-area .depth1 > li {
-  display: inline-block;
-  height: inherit;
-  font-size: 1.7rem;
-  position: relative;
-}
-
-#snb .nav-area .depth1 > li > a {
-  display: block;
-  height: 50px;
-  line-height: 50px;
-  min-width: 230px;
-  border-right: 1px solid #e1e1e1;
-  padding: 0 30px;
-  position: relative;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  font-size: 1.5rem;
-}
-
-#snb .nav-area .depth1 > li > a::after {
-  content: "";
-  border-width: 1px 1px 0 0;
-  border-color: #323232;
-  border-style: solid;
-  width: 8px;
-  height: 8px;
-  position: absolute;
-  top: 50%;
-  margin-top: -6px;
-  right: 24px;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-#snb .nav-area .depth1 > li .depth2 {
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 100%;
-  display: none;
-  z-index: 10;
-}
-
-#snb .nav-area .depth1 > li .depth2 > li > a {
-  background-color: #960c1d;
-  display: block;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 30px;
-  color: #fff;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  font-size: 1.5rem;
-}
-
-#snb .nav-area .depth1 > li .depth2 > li > a:hover {
-  background-color: #670814;
-  color: #fff;
-}
-
-#snb .nav-area .depth1 > li.active > a {
-  background-color: #960c1d;
-  border-color: #960c1d;
-  color: #fff;
-}
-
-#snb .nav-area .depth1 > li.active > a .depth2 {
-  display: block;
-}
-
-#snb .nav-area .depth1 > li.active > a::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  border-color: #fff;
-}
-
-#snb .nav-area.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #fff;
-  z-index: 90;
-}
-
-.cont-top {
-  text-align: center;
-}
-
-.cont-top .title {
-  font-family: 'Iropke Batang', serif;
-  padding: 60px 0;
-  font-size: 3.5rem;
-  font-weight: 400;
-  letter-spacing: -.05em;
-}
-
-#contents {
-  margin-bottom: 100px;
-  min-height: 1000px;
-}
-
-@media (max-width: 1280px) {
-  #snb .nav-area .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (max-width: 992px) {
-  /* col-sm */
-  #spot {
-    height: 290px;
-  }
-  #spot .snb-title {
-    margin-top: 30px;
-    font-size: 2.8rem;
-  }
-  #spot .snb-title span {
-    font-size: 1.7rem;
-  }
-  #snb .nav-area {
-    display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  #contents {
-    margin-bottom: 50px;
-    min-height: inherit;
-  }
+.edge-round img {
+  border-radius: 0 35% 0 0;
 }
 /*# sourceMappingURL=sub.css.map */

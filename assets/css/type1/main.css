@@ -2,11 +2,11 @@
 Author : 
 Create date : 
 -------------------------------------------------*/
-#contents section.section1 {
+#contents .section1 {
   height: 100vh;
 }
 
-#contents section.section1 .banner {
+#contents .section1 .banner {
   position: relative;
   bottom: 0;
   width: 100%;
@@ -14,7 +14,7 @@ Create date :
   overflow: hidden;
 }
 
-#contents section.section1 .banner video {
+#contents .section1 .banner video {
   position: absolute;
   top: 0;
   left: 0;
@@ -24,7 +24,7 @@ Create date :
      object-fit: cover;
 }
 
-#contents section.section1 .banner .overlay-text {
+#contents .section1 .banner .overlay-text {
   padding-top: 50px;
   position: absolute;
   top: 0;
@@ -52,7 +52,7 @@ Create date :
   mix-blend-mode: screen;
 }
 
-#contents section.section1 .banner .overlay-text strong {
+#contents .section1 .banner .overlay-text strong {
   line-height: 1;
   opacity: 0;
   -webkit-transition: all 1s ease;
@@ -65,12 +65,12 @@ Create date :
   letter-spacing: -2rem;
 }
 
-#contents section.section1 .banner .overlay-text strong em {
+#contents .section1 .banner .overlay-text strong em {
   font-size: 18rem;
   letter-spacing: 0;
 }
 
-#contents section.section1 .banner .overlay-text p {
+#contents .section1 .banner .overlay-text p {
   opacity: 0;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -82,7 +82,7 @@ Create date :
   font-weight: 500;
 }
 
-#contents section.section1 .banner .overlay-text p strong {
+#contents .section1 .banner .overlay-text p strong {
   letter-spacing: 0;
   font-size: 4.7rem;
   display: inline-block;
@@ -90,27 +90,27 @@ Create date :
   font-family: "IncheonMICE";
 }
 
-#contents section.section1.fade-in .banner strong {
+#contents .section1.fade-in .banner strong {
   opacity: 1;
   top: 0;
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
 }
 
-#contents section.section1.fade-in .banner p {
+#contents .section1.fade-in .banner p {
   opacity: 1;
   top: 0;
   -webkit-transition-delay: 0.7s;
           transition-delay: 0.7s;
 }
 
-#contents section.section2 {
+#contents .section2 {
   height: 1080px;
   background-color: #f5f5f5;
   padding-top: 230px;
 }
 
-#contents section.section2 .slogan {
+#contents .section2 .slogan {
   font-size: 8rem;
   font-family: "IncheonMICE";
   color: #707070;
@@ -118,7 +118,7 @@ Create date :
   letter-spacing: -2px;
 }
 
-#contents section.section2 .slogan > span {
+#contents .section2 .slogan > span {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   position: relative;
@@ -127,18 +127,18 @@ Create date :
   display: block;
 }
 
-#contents section.section2 .slogan strong {
+#contents .section2 .slogan strong {
   font-weight: 700;
   color: #000;
   position: relative;
 }
 
-#contents section.section2 .slogan strong span {
+#contents .section2 .slogan strong span {
   position: relative;
   z-index: 2;
 }
 
-#contents section.section2 .slogan strong::before {
+#contents .section2 .slogan strong::before {
   content: "";
   background: url("../../images/bg_circle.gif") 0 0 no-repeat;
   width: 25px;
@@ -148,7 +148,7 @@ Create date :
   right: -40px;
 }
 
-#contents section.section2 .slogan strong::after {
+#contents .section2 .slogan strong::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -159,7 +159,7 @@ Create date :
   z-index: 1;
 }
 
-#contents section.section2 .desc {
+#contents .section2 .desc {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   opacity: 0;
@@ -171,7 +171,7 @@ Create date :
   font-weight: 400;
 }
 
-#contents section.section2 .desc-title {
+#contents .section2 .desc-title {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   position: relative;
@@ -183,7 +183,7 @@ Create date :
   display: block;
 }
 
-#contents section.section2 .desc p {
+#contents .section2 .desc p {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   position: relative;
@@ -192,7 +192,7 @@ Create date :
   line-height: 1.6;
 }
 
-#contents section.section2 .desc-btn {
+#contents .section2 .desc-btn {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   position: relative;
@@ -207,61 +207,61 @@ Create date :
   background: url("../../images/bg_btn_arr.gif") 90% center no-repeat #f5f5f5;
 }
 
-#contents section.section2.fade-in .slogan > span {
+#contents .section2.fade-in .slogan > span {
   opacity: 1;
   left: 30px;
 }
 
-#contents section.section2.fade-in .slogan > span:nth-child(1) {
+#contents .section2.fade-in .slogan > span:nth-child(1) {
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
 
-#contents section.section2.fade-in .slogan > span:nth-child(2) {
+#contents .section2.fade-in .slogan > span:nth-child(2) {
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
 }
 
-#contents section.section2.fade-in .slogan > span:nth-child(3) {
+#contents .section2.fade-in .slogan > span:nth-child(3) {
   -webkit-transition-delay: 0.7s;
           transition-delay: 0.7s;
 }
 
-#contents section.section2.fade-in .slogan > span:nth-child(4) {
+#contents .section2.fade-in .slogan > span:nth-child(4) {
   -webkit-transition-delay: 0.9s;
           transition-delay: 0.9s;
 }
 
-#contents section.section2.fade-in .desc {
+#contents .section2.fade-in .desc {
   opacity: 1;
 }
 
-#contents section.section2.fade-in .desc-title {
+#contents .section2.fade-in .desc-title {
   opacity: 1;
   bottom: 0;
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
 
-#contents section.section2.fade-in .desc p {
+#contents .section2.fade-in .desc p {
   opacity: 1;
   bottom: 0;
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
 }
 
-#contents section.section2.fade-in .desc-btn {
+#contents .section2.fade-in .desc-btn {
   opacity: 1;
   bottom: 0;
   -webkit-transition-delay: 0.7s;
           transition-delay: 0.7s;
 }
 
-#contents section.section3 {
+#contents .section3 {
   padding-top: 180px;
 }
 
-#contents section.section3 .slogan {
+#contents .section3 .slogan {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   position: relative;
@@ -274,18 +274,18 @@ Create date :
   letter-spacing: -2px;
 }
 
-#contents section.section3 .slogan strong {
+#contents .section3 .slogan strong {
   font-weight: 700;
   color: #000;
 }
 
-#contents section.section3 .btn-download {
+#contents .section3 .btn-download {
   width: 254px;
   height: 257px;
   position: relative;
 }
 
-#contents section.section3 .btn-download span {
+#contents .section3 .btn-download span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -297,21 +297,21 @@ Create date :
   letter-spacing: -0.05em;
 }
 
-#contents section.section3 .btn-download span strong {
+#contents .section3 .btn-download span strong {
   font-weight: 700;
 }
 
-#contents section.section3 .btn-download span i {
+#contents .section3 .btn-download span i {
   color: #065863;
   margin-bottom: 5px;
 }
 
-#contents section.section3 .btn-download .bg {
+#contents .section3 .btn-download .bg {
   -webkit-animation: rotating 10s linear infinite;
           animation: rotating 10s linear infinite;
 }
 
-#contents section.section3 .contact-us {
+#contents .section3 .contact-us {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   position: relative;
@@ -324,19 +324,19 @@ Create date :
   line-height: 1.4;
 }
 
-#contents section.section3 .contact-us .label {
+#contents .section3 .contact-us .label {
   color: #006064;
   font-size: 4.5rem;
   font-family: "IncheonMICE";
   font-weight: 700;
 }
 
-#contents section.section3.fade-in .slogan {
+#contents .section3.fade-in .slogan {
   opacity: 1;
   left: 30px;
 }
 
-#contents section.section3.fade-in .contact-us {
+#contents .section3.fade-in .contact-us {
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
   opacity: 1;
