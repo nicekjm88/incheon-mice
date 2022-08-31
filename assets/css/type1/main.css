@@ -101,15 +101,11 @@ Create date :
 #contents .section1.fade-in .banner strong {
   opacity: 1;
   top: 0;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
 }
 
 #contents .section1.fade-in .banner p {
   opacity: 1;
   top: 0;
-  -webkit-transition-delay: 0.7s;
-          transition-delay: 0.7s;
 }
 
 #contents .section2 {
@@ -192,8 +188,6 @@ Create date :
 }
 
 #contents .section2 .desc p {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
   position: relative;
   bottom: -30px;
   opacity: 0;
@@ -220,26 +214,6 @@ Create date :
   left: 30px;
 }
 
-#contents .section2.fade-in .slogan > span:nth-child(1) {
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
-}
-
-#contents .section2.fade-in .slogan > span:nth-child(2) {
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
-}
-
-#contents .section2.fade-in .slogan > span:nth-child(3) {
-  -webkit-transition-delay: 0.7s;
-          transition-delay: 0.7s;
-}
-
-#contents .section2.fade-in .slogan > span:nth-child(4) {
-  -webkit-transition-delay: 0.9s;
-          transition-delay: 0.9s;
-}
-
 #contents .section2.fade-in .desc {
   opacity: 1;
 }
@@ -247,22 +221,16 @@ Create date :
 #contents .section2.fade-in .desc-title {
   opacity: 1;
   bottom: 0;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
 }
 
 #contents .section2.fade-in .desc p {
   opacity: 1;
   bottom: 0;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
 }
 
 #contents .section2.fade-in .desc-btn {
   opacity: 1;
   bottom: 0;
-  -webkit-transition-delay: 0.7s;
-          transition-delay: 0.7s;
 }
 
 #contents .section3 {
@@ -345,8 +313,6 @@ Create date :
 }
 
 #contents .section3.fade-in .contact-us {
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
   opacity: 1;
   bottom: 0;
 }
@@ -370,6 +336,57 @@ Create date :
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 767px) {
+  #contents .section1 {
+    height: inherit;
+  }
+  #contents .section1 .banner .overlay-text {
+    padding-top: 0;
+  }
+  #contents .section1 .banner .overlay-text strong em {
+    font-size: 4rem;
+  }
+  #contents .section1 .banner .overlay-text strong {
+    font-size: 8rem;
+    letter-spacing: -.5rem;
+  }
+  #contents .section1 .banner .overlay-text p {
+    font-size: 2rem;
+    margin-top: 35px;
+  }
+  #contents .section1 .banner .overlay-text p strong {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+  #contents .section2 {
+    height: inherit;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  #contents .section2 .slogan {
+    font-size: 4rem;
+    text-align: center;
+  }
+  #contents .section2.fade-in .slogan > span {
+    left: 0;
+  }
+  #contents .section2 .desc {
+    background-size: 90%;
+    background-position: center 20px;
+  }
+  #contents .section2 .desc-title {
+    font-size: 2.5rem;
+  }
+  #contents .section2 .desc {
+    font-size: 2rem;
+    padding: 280px 20px 0;
+  }
+  #contents .section2 .desc-btn {
+    width: 215px;
+    height: 55px;
   }
 }
 /*# sourceMappingURL=main.css.map */

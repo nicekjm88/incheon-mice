@@ -295,6 +295,13 @@ input[type=number] {
   margin: 0 auto;
 }
 
+@media (max-width: 1330px) {
+  .wrap-container {
+    width: 100%;
+    height: inherit;
+  }
+}
+
 .contents-title {
   font-size: 6.5rem;
   font-family: "IncheonMICE";
@@ -454,6 +461,12 @@ input[type=number] {
   transition: all 0.5s ease;
 }
 
+@media (max-width: 1330px) {
+  .area-login {
+    padding-top: 60px;
+  }
+}
+
 .area-login-form {
   padding-left: 40px;
 }
@@ -504,6 +517,12 @@ input[type=number] {
 .area-login-form .area-login-links > li.strong > a {
   color: #006064;
   font-weight: 700;
+}
+
+@media (max-width: 1330px) {
+  .area-login-form {
+    padding-left: 0;
+  }
 }
 
 #wrap.intro .area-login .edge-round img {
