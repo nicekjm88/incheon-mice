@@ -7,13 +7,9 @@ Create date :
   font-family: "Ubuntu", sans-serif;
 }
 
-#wrap.intro #header {
-  top: 0;
-}
-
 #header {
   position: fixed;
-  top: -116px;
+  top: 0;
   left: 0;
   z-index: 99;
   width: 100%;
@@ -143,6 +139,7 @@ Create date :
 }
 
 #footer {
+  width: 100%;
   padding: 60px 130px 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;

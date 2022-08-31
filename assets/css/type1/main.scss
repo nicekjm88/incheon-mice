@@ -5,6 +5,19 @@ Create date :
 -------------------------------------------------*/
 @import "../mixin";
 
+#wrap {
+  
+  #header {
+    top: -116px;
+  }
+
+  &.intro {
+    #header {
+      top: 0;
+    }
+  }
+}
+
 #contents {
 
   .section1 {

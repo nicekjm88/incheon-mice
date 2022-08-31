@@ -2,6 +2,14 @@
 Author : 
 Create date : 
 -------------------------------------------------*/
+#wrap #header {
+  top: -116px;
+}
+
+#wrap.intro #header {
+  top: 0;
+}
+
 #contents .section1 {
   height: 100vh;
 }

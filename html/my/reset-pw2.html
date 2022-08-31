@@ -25,54 +25,36 @@
     <div id="contents">
       <div class="wrap-container">
         <div class="container">
-          <div class="area-login row">
-            <div class="col-md-6">
-              <div class="edge-round">
-                <img src="/assets/images/bg_login.jpg" alt="">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="area-login-form">
+          <div class="area-reset row">
+            <div class="col-md-12">
+              <div>
                 <!-- breadcrumb -->
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/html/index.html"> <i class="xi-home"></i> <span class="hidden">Home</span></a></li>
-                    <li class="breadcrumb-item active" aria-current="page">로그인</li>
+                    <li class="breadcrumb-item" aria-current="page">멤버스</li>
+                    <li class="breadcrumb-item active" aria-current="page">비밀번호 재설정</li>
                   </ol>
                 </nav>
 
-                <h1 class="contents-title">로그인</h1>
-                <p>MICE뷰로 홈페이지 방문을 환영합니다.</p>
+                <h1 class="contents-title">비밀번호 재설정</h1>
+                <p>이메일 인증을 통해 비밀번호를 재설정 하실 수 있습니다.</p>
 
-                <form class="form-login" action="">                
-                  <div class="form-group">
-                    <label class="hidden" for="uniqueNum">사업자등록번호 또는 고유번호</label>
-                    <input id="uniqueNum" type="text" class="form-control" placeholder="사업자등록번호 또는 고유번호">    
-                  </div>                            
-                  <div class="form-group">
-                    <label class="hidden" for="uniqueNum2">비밀번호</label>
-                    <input id="uniqueNum2" type="password" class="form-control" placeholder="비밀번호">    
+                <div class="card">
+                  <div class="icon-desc">
+                    <strong class="icon-desc-title">이메일 인증</strong>
+                    <p>
+                      대표 이메일 (micetest@ability.co.kr) 로 인증번호가 전송되었습니다.<br>
+                      인증 후 비밀번호 재설정이 가능합니다.<br>
+                      메일이 보이지 않으면 스팸 메일함을 확인해주세요.
+                      <em class="strong">인증메일은 발송 후 1시간까지 유효합니다.</em>  
+                    </p>
+
+                    <hr>
+
+                    <div data-include="../include/email-auth.html"></div>
                   </div>
-                  
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">아이디 저장</label>
-                  </div>
-
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">자동로그인</label>
-                  </div>
-
-                  <button type="button" class="btn btn-primary btn-block btn-login">로그인</button>
-                  
-                </form>
-
-                <ul class="area-login-links">
-                  <li><a href="#">가입여부 조회</a></li>
-                  <li><a href="#">비밀번호재설정</a></li>
-                  <li class="strong"><a href="#">회원가입</a></li>
-                </ul>
+                </div>                
               </div>
             </div>
           </div>

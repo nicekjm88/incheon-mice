@@ -118,6 +118,10 @@ button,input,optgroup,select,textarea { font-family: inherit; font-size: inherit
 .clearfix { position: relative; }
 .clearfix:after { content: ""; display: block; clear: both; }
 
+.form-group {
+  position: relative;
+}
+
 .form-control { display: inline-block; width: 100%; height: 60px; padding:10px 20px; font-size: 1.8rem; line-height: 1.42857143; color: #666; background-color: #fff; background-image: none; border: 1px solid #ddd; border-radius: 5px}
 textarea.form-control { height: inherit; resize: none; }
 .form-control.xs { width: 75px; }
@@ -129,7 +133,29 @@ textarea.form-control { height: inherit; resize: none; }
 .form-control.normal { width: auto; }
 .form-control::placeholder{color:#666;}
 
-.btn { display: inline-block; margin-bottom: 0; font-size:1.7rem; font-weight: normal; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; user-select: none; background-image: none; color: #333; background-color: #fff; transition: all .25s ease; border: 1px solid #ddd; padding:8px 12px;}
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 1.7rem;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  color: #000;
+  background-color: #fafafa;
+  transition: all .25s ease;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  height: 74px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;}
 .btn:hover, .btn:focus { transition: all .25s ease; -webkit-transition: all .25s ease; }
 .btn.btn-xs { width: 75px; }
 .btn.btn-sm { width: 100px; }
@@ -139,14 +165,31 @@ textarea.form-control { height: inherit; resize: none; }
 .btn.btn-xxl { width: 230px; }
 .btn.btn-normal { width: auto; }
 .btn.btn-block { display: block; width: 100%; }
+
+.btn.btn-input {
+  width: calc(100% - 10px);
+  height: 60px;
+  color: #555; 
+  font-size: 1.8rem;
+  font-weight: 400;
+  background-color: #fff;
+  margin-left: 10px;
+}
+
 .btn.btn-primary {
   background-color: #006064; 
   color: #fff; 
   border-color: #006064; 
-  height: 74px; 
-  border-radius: 5px; 
-  font-size: 20px;
-  font-weight: 700;
+}
+
+.btn-group {
+  margin: 0 -6px;
+  overflow: hidden;
+}
+.btn-group .btn {
+  float: left;
+  width: calc(50% - 12px);
+  margin: 0 6px;
 }
 
 /* ...생성 */
@@ -159,3 +202,17 @@ textarea.form-control { height: inherit; resize: none; }
 
 .img-responsive{max-width:100%; display:block; margin:0 auto;}
 
+/* checkbox */
+.form-check-inline {
+  display: inline-block;
+}
+
+.form-check-inline + .form-check-inline {
+  margin-left: 20px;
+}
+
+.form-check-input {
+  width: 25px;
+  height: 25px;
+  background-color: #006064;
+}
