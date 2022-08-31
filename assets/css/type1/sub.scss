@@ -23,11 +23,19 @@ Create date :
     margin-top: 20px;
     font-size: 2.2rem;
     color: #555;
+    letter-spacing: -0.05em;
 
     + .card {
       margin-top: 80px;
     }
   }
+}
+
+.contents-title2 {
+  font-size: 3rem;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 /* breadcrumb */
@@ -76,6 +84,7 @@ Create date :
   padding: 80px 330px;
   color: #555;
   font-size: 1.8rem;
+  letter-spacing: -0.05em;
 
   &-title {
     font-size: 2.0rem;
@@ -96,6 +105,57 @@ Create date :
     margin: 30px 0;
     border-top: 1px solid #ddd;
   }
+}
+
+/* 회원가입 프로세스 */
+.join-process {
+  padding: 80px 0;
+
+  > li {
+    padding-left: 130px;
+    height: 110px;
+    background: url('../../images/bg_process.gif') 0 -120px no-repeat;
+    padding-top: 25px;
+    font-size: 2rem;
+    color: #666;
+
+    strong {
+      display: block;
+      font-size: 2.5rem;
+      color: #000;
+    }
+
+    &:nth-child(2) {
+      background-position: -333px -120px;
+    }
+    &:nth-child(3) {
+      background-position: -666px -120px;
+    }
+    &:nth-child(4) {
+      background-position: -998px -120px;
+    }
+
+    &.is-active {
+      background-position: 1px 0;
+
+      &:nth-child(2) {
+        background-position: -333px 0;
+      }
+      &:nth-child(3) {
+        background-position: -666px 0;
+      }
+      &:nth-child(4) {
+        background-position: -998px 0;
+      }
+
+      strong {
+        color: #006064;
+        font-weight: 700;
+      }
+    }
+  }
+
+  
 }
 
 
@@ -228,6 +288,16 @@ Create date :
 
 .btn-auth {
   margin-top: 30px;
+}
+
+/* 회원가입 */
+.area-join {
+  padding-top: 70px;
+  background: url(../../images/bg_join.gif) right 145px no-repeat;
+}
+
+.form-group.multiple {
+  margin-top: 10px;
 }
 
 

@@ -181,6 +181,10 @@ textarea.form-control { height: inherit; resize: none; }
   color: #fff; 
   border-color: #006064; 
 }
+.btn-with-label { margin-top: 70px; }
+.btn-submit {
+  padding-top: 30px;
+}
 
 .btn-group {
   margin: 0 -6px;
