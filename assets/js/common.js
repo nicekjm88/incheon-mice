@@ -12,49 +12,9 @@ $(function () {
     }
   });
 
-  //학부바로가기 버튼
-  $(".department button").click(function () {
-    $(this).next().slideToggle();
-    $(this).parent().toggleClass("active");
-  });
-
-  //하단 관련사이트
-  $(".family-site").click(function () {
-    $(this).toggleClass("active");
-    $(this).find(".depth-list").slideToggle();
-  });
-
-  //상단으로 스무스~
-  $(".top").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 400);
-    return false;
-  });
-
-  //모달팝업
-  $(".modal-trigger").click(function () {
-    $(this).next().addClass("active");
-    $("body").addClass("fixed");
-  });
-  $("#modal .close").click(function () {
-    $(this).parents("#modal").removeClass("active");
-    $("body").removeClass("fixed");
-  });
-
-  //위치 및 연락처 (캠퍼스 2개 )
-  // 첫번째 활성화
-  $(".locate .map li.first").css("display", "block");
-  $(".locate .info > li.first").css("display", "block");
-
-  $(".locate .tab li").click(function () {
-    //메뉴 활성화
-    $(this).addClass("active").siblings().removeClass("active");
-    var area_num = $(this).index();
-
-    //콘텐츠 활성화
-    if ($(".locate .tab li").hasClass("active") == true) {
-      $(".locate .map > li").siblings().fadeOut().eq(area_num).fadeIn();
-      $(".locate .info > li").siblings().fadeOut().eq(area_num).fadeIn();
-    }
+  $(".accordion > li .open").on("click", function () {
+    $(this).parents("li").toggleClass("is-active");
+    $(this).parent().next().slideToggle();
   });
 });
 
@@ -70,3 +30,46 @@ $(window).resize(function () {
 $(window).on("load", function () {
   $(window).trigger("resize");
 });
+
+(function (global, document) {
+  "use strict";
+
+  var checkAll = document.querySelector('[name="checkAll"]');
+  var checkItem = document.querySelectorAll('[name="checkItem"]');
+
+  checkAll.setAttribute("id", "check-all");
+  checkAll.nextElementSibling.setAttribute("for", "check-all");
+
+  Array.prototype.forEach.call(checkItem, function (item, index) {
+    item.setAttribute("id", "agree" + Number(index + 1));
+    item.nextElementSibling.setAttribute("for", "agree" + Number(index + 1));
+
+    item.addEventListener("click", function (event) {
+      var checkedSum = 0;
+
+      for (var i = 0; i < checkItem.length; i++) {
+        if (checkItem[i].checked) {
+          checkedSum += 1;
+        }
+      }
+
+      if (checkedSum === checkItem.length) {
+        checkAll.checked = true;
+      } else {
+        checkAll.checked = false;
+      }
+    });
+  });
+
+  checkAll.addEventListener("click", function () {
+    if (this.checked) {
+      Array.prototype.forEach.call(checkItem, function (item, index) {
+        item.checked = true;
+      });
+    } else {
+      Array.prototype.forEach.call(checkItem, function (item, index) {
+        item.checked = false;
+      });
+    }
+  });
+})(window, window.document);
