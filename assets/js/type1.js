@@ -42,15 +42,6 @@ $(function () {
       .addTo(controller);
   });
 
-  //메인컨텐츠 전체 올라오기
-  var tween = TweenMax.to("#contents", 1, {
-    css: { transform: "translateY(-104px)" },
-  });
-  var scene = new ScrollMagic.Scene({ offset: 200, duration: 500 })
-    .setTween(tween)
-    // .addIndicators(true)
-    .addTo(controller);
-
   //텍스트 애니메이션
   var tween2 = TweenMax.to(".type-animate", 1, { css: { opacity: "1" } });
   var scene = new ScrollMagic.Scene({ offset: 200, duration: 500 })
