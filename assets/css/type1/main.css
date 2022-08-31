@@ -33,7 +33,6 @@ Create date :
 }
 
 #contents .section1 .banner .overlay-text {
-  padding-top: 50px;
   position: absolute;
   top: 0;
   left: 0;
@@ -63,8 +62,6 @@ Create date :
 #contents .section1 .banner .overlay-text strong {
   line-height: 1;
   opacity: 0;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
   position: relative;
   top: 30px;
   font-size: 32rem;
@@ -80,8 +77,6 @@ Create date :
 
 #contents .section1 .banner .overlay-text p {
   opacity: 0;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
   position: relative;
   top: 30px;
   margin-top: 70px;
@@ -96,6 +91,17 @@ Create date :
   display: inline-block;
   margin-bottom: 20px;
   font-family: "IncheonMICE";
+  display: block;
+}
+
+#contents .section1 .banner .overlay-text p br {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #contents .section1 .banner .overlay-text p br {
+    display: block;
+  }
 }
 
 #contents .section1.fade-in .banner strong {
@@ -123,8 +129,6 @@ Create date :
 }
 
 #contents .section2 .slogan > span {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
   position: relative;
   left: -30px;
   opacity: 0;
@@ -164,8 +168,6 @@ Create date :
 }
 
 #contents .section2 .desc {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
   opacity: 0;
   padding-top: 370px;
   background: url("../../images/bg_section2.jpg") 0 0 no-repeat;
@@ -176,8 +178,6 @@ Create date :
 }
 
 #contents .section2 .desc-title {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
   position: relative;
   bottom: -30px;
   opacity: 0;
@@ -195,8 +195,6 @@ Create date :
 }
 
 #contents .section2 .desc-btn {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
   position: relative;
   bottom: -30px;
   opacity: 0;
@@ -238,8 +236,6 @@ Create date :
 }
 
 #contents .section3 .slogan {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
   position: relative;
   left: -30px;
   opacity: 0;
@@ -288,8 +284,6 @@ Create date :
 }
 
 #contents .section3 .contact-us {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
   position: relative;
   bottom: -30px;
   opacity: 0;
@@ -387,6 +381,35 @@ Create date :
   #contents .section2 .desc-btn {
     width: 215px;
     height: 55px;
+  }
+  #contents .section3 {
+    padding-top: 100px;
+  }
+  #contents .section3.fade-in .slogan {
+    left: 0;
+  }
+  #contents .section3 .slogan {
+    font-size: 3.8rem;
+    text-align: center;
+  }
+  #contents .section3 .btn-download {
+    position: absolute;
+    top: 290px;
+    right: 40px;
+    zoom: .75;
+  }
+  #contents .section3 .contact-us {
+    font-size: 2rem;
+  }
+  #contents .section3 .contact-us .label {
+    font-size: 2.2rem;
+  }
+  #contents .section3.fade-in .contact-us {
+    margin-top: 0;
+    padding: 60px 30px 0;
+  }
+  #contents .section3.fade-in .contact-us > div {
+    margin-bottom: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */
