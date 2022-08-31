@@ -4,8 +4,8 @@ Author :
 Create date : 
 -------------------------------------------------*/
 /*-------------------------------------------------
-Author : JMKim
-Create date : May.31.2018
+Author : 
+Create date : 
 -------------------------------------------------*/
 .control {
   display: inline-block;
@@ -267,6 +267,17 @@ Create date : May.31.2018
   width: 100%;
 }
 
+/* input type Number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 @media (max-width: 425px) {
   .control-select {
     min-width: 100%;
@@ -304,5 +315,9 @@ Create date : May.31.2018
 
 .edge-round img {
   border-radius: 0 35% 0 0;
+}
+
+.area-login-form {
+  padding-left: 40px;
 }
 /*# sourceMappingURL=sub.css.map */

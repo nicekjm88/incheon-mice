@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*-------------------------------------------------
-Author : JMKim
-Create date : May.31.2018
+Author : 
+Create date : 
 -------------------------------------------------*/
 $base-color:#eee;
 $main-color: #00337a;
@@ -67,6 +67,16 @@ $select-bg:#f6f6f6;
   &::after{content: attr(data-text); font-size:14px; position: absolute; top: 0; left: 0;
   background: #fff; padding: 10px 15px; display: block; width: calc(100% - 40px); pointer-events: none; z-index: 20; height: 40px; color:#666; border-radius: 5px 10px 10px 5px;}
   input {opacity: 0; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 99; height: 40px; margin: 0; padding: 0; display: block; cursor: pointer; width: 100%;}
+}
+
+/* input type Number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 @media (max-width:425px){

@@ -1,160 +1,348 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
-
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인천 - 세계에서 가장 가까운 마이스 특별시</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-  <link rel="stylesheet" href="./assets/css/common.css">
-  <link rel="stylesheet" href="./assets/css/grid.min.css">
-  <link rel="stylesheet" href="./assets/css/type1/layout.css">
-  <link rel="stylesheet" href="./assets/css/type1/main.css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>[작업현황] </title>
+
+<style type="text/css">
+body {margin:0; padding:30px; font-family:'맑은 고딕'; font-size:15px; color:#333; line-height:30px;}
+h1 {margin:0 0 30px; padding:0; font-size:30px; color:#000; text-align:center; letter-spacing:-1px; line-height:50px; letter-spacing:-1px;}
+
+.fixed {position:fixed; right:0; top:0; z-index:1; width:122px; background-color:#000;}
+.fixed h2 {overflow:hidden; width:0; height:0; font-size:0; line-height:0;}
+.fixed h2 + a {height:50px; padding-top:10px; border-left:0 none; background-color:#fc0; font-weight:bold; color:#333; line-height:18px;}
+.fixed a {float:left; width:60px; height:53px; padding-top:7px; border-left:1px solid #fff; font-size:14px; color:#fff; text-align:center; text-decoration:none; line-height:20px;}
+
+table {overflow:hidden; width:100%; border-collapse:collapse;font-size:12px;}
+table caption {overflow:hidden; width:0; height:0; margin:0; padding:0; font-size:0; line-height:0;}
+table tr:nth-child(even) {background-color:#f8f8f8;}
+table th {position:relative; padding:5px; border-top:3px solid #333; }
+table th:before {position:absolute; left:-1px; top:50%; width:1px; height:10px; margin-top:-5px; background-color:#ccc; content:'';}
+table td {padding:5px 15px; border:1px solid #efefef;}
+table td:first-child {border-left:0 none;}
+table td:nth-child(7) {font-size:13px; color:#555; letter-spacing:-1px; line-height:25px;}
+table td:last-child {border-right:0 none; font-size:13px; color:#555; letter-spacing:-1px; line-height:25px;}
+table a {color:#f3a600;}
+table .blank {height:15px; padding:0; border:0 none; background-color:#ccc; font-size:0; line-height:0;}
+
+.project {overflow:hidden; position:relative; margin-bottom:30px; padding:20px 20px 20px 0; border:1px solid #efefef;}
+.project li {margin-left:20px;}
+.info {position:absolute; left:20px; top:20px; margin:0; padding:0;}
+.info .option {color:#ccc;}
+.info .option span {text-decoration:line-through;}
+.info .option strong {font-weight:bold; color:#333;}
+.history {padding:15px 0; background-color:#fcfcfc;}
+.history ul {overflow:hidden; overflow-y:auto; margin:0 15px; padding:0; list-style:none;}
+.history li {position:relative; margin-left:10px; padding-left:110px; font-size:14px; color:#666;}
+.history strong {position:absolute; left:0; top:0;}
+.history strong:before {position:absolute; left:90px; top:50%; width:1px; height:10px; margin-top:-4px; background-color:#999; content:'';}
+.add{color:red;}
+.modify{color:orange;}
+</style>
 </head>
 
 <body>
-  <!-- Accessibility -->
-  <a href="#contents" class="skip-to">본문 바로가기</a>
+<h1>퍼블리싱 매뉴구조도</h1>
 
-  <div id="wrap">
+<nav class="fixed">
+	<h2>메뉴</h2>
 
-    <!-- Header -->
-    <header id="header" data-include="../include/header.html"></header>
+	<a href="style/style.html">스타일<br />가이드</a>
+	<a href="#">▲<br />위로</a>
+</nav>
 
-    <div id="contents">
-      <div class="section1">
-        <div class="banner">
-          <video autoplay muted loop>
-            <source src="./assets/video/video.mp4" type="video/mp4">
-          </video>
-          <div class="overlay-text">
-            <strong>
-              <em>MICE CITY</em>
-              <br>INCHEON
-            </strong>
-            <p>
-              <strong>
-                세계에서 가장 가까운 Incheon CVB
-              </strong>
-              <br>
-              모든 것이 가능한 복합 문화공간. 바로 이곳이, 인천컨벤션뷰로
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="section2">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-offset-1 col-md-5">
-              <p class="slogan">
-                <span>
-                  <strong>
-                    <span>
-                      인천의 인프라와
-                    </span>
-                  </strong>
-                </span>
-                <span>
-                  원스톱 서비스로
-                </span>
-                <span>
-                  모든 과정속에서
-                </span>
-                <span>
-                  가치를 창조합니다
-                </span>
-              </p>
-            </div>
-            <div class="col-md-6">
-              <div class="desc">
-                <strong class="desc-title">MICE 베뉴</strong>
-                <p>
-                  MICE 인프라가 집적화되어 컨벤션센터, 호텔,<br>
-                  쇼핑, 음식, 관광 등 원스톱 서비스를 제공합니다.
-                </p>
+<div class="project">
+	
+	<div class="history">
+		<ul>
+			<li>
+				<strong>2022.08.30</strong>
+				<span>최초작성</span>
+			</li>
+		</ul>
+	</div>
+</div>
 
-                <button class="desc-btn">베뉴검색</button>
-
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="section3">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-offset-1 col-md-7">
-              <div class="slogan">
-                인천 MICE뷰로는<br>
-                <strong>
-                  언제나 준비되어있습니다.
-                </strong>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <button class="btn-download">
-                <span>
-                  <i class="xi-download"></i><br>
-                  <strong>홍보자료</strong><br>
-                  다운로드
-                </span>
-                <img class="bg" src="./assets/images/btn_download.png" alt="CVB, download, material, promotional">
-              </button>
-
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row contact-us">
-            <div class="col-md-offset-1 col-md-4">
-              <strong class="label">
-                Address.
-              </strong>
-              <address>
-                (21999) 인천광역시 연수구 갯벌로 12<br>미추홀타워 16, 17F 인천관광공사
-              </address>
-            </div>
-            <div class="col-md-2">
-              <strong class="label">Tel.</strong>
-              <p>
-                032-899-7437
-              </p>
-            </div>
-            <div class="col-md-2">
-              <strong class="label">E-Mail.</strong>
-              <p>
-                <a href="mailto:cvb@into.or.kr">cvb@into.or.kr</a>
-              </p>
-            </div>
-            <div class="col-md-2">
-              <strong class="label">Fax.</strong>
-              <p>
-                032-899-7483
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer id="footer" data-include="../include/footer.html"></footer>
-
-  </div>
-
-  <!-- 스크립트 호출 -->
-  <script type="text/javascript" src="./assets/js/jquery-2.2.4.min.js"></script>
-  <script type="text/javascript" src="./assets/js/jquery.bxslider.min.js"></script>
-  <script type="text/javascript" src="./assets/js/common.js"></script>
-  <script type="text/javascript" src="./assets/js/type1.js"></script>
-  <script type="text/javascript" src="./assets/js/ScrollMagic.min.js"></script>
-  <script type="text/javascript" src="./assets/js/animation.gsap.min.js"></script>
-  <script type="text/javascript" src="./assets/js/debug.addIndicators.min.js"></script>
-  <script type="text/javascript" src="./assets/js/TweenMax.min.js"></script>
-  <script type="text/javascript" src="./assets/js/include.js"></script>
+<table>
+	<caption>메뉴구조도에 따른 작업현황</caption>
+	<thead>
+		<tr>
+			<th scope="col">1depth</th>
+			<th scope="col">2depth</th>
+			<th scope="col">3depth</th>
+			<th scope="col">4depth</th>
+			<th scope="col">type</th>
+			<th scope="col">link</th>
+			<th scope="col">디자인</th>
+			<th scope="col">퍼블리싱</th>
+			<th scope="col">반응형</th>
+			<th scope="col">비고</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><strong>메인</strong></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><a href="html/index.html" target="_blank">index.html</a></td>
+			<td>O</td>
+			<td>O</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="10" class="blank"></td>
+		</tr>
+		<tr>
+		  <td><strong>my</strong></td>
+		  <td>로그인</td>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+		  <td><a href="html/my/login.html" target="_blank">login.html</a></td>
+			<td>O</td>
+			<td>O</td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+		  <td></td>
+		  <td>비밀번호 재설정</td>
+		  <td>비밀번호 변경</td>
+		  <td></td>
+		  <td></td>
+		  <td><a href="html/my/reset-pw.html" target="_blank">reset-pw.html</a></td>
+			<td>O</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+		  <td></td>
+		  <td></td>
+		  <td>이메일 인증</td>
+		  <td></td>
+		  <td></td>
+		  <td><a href="html/my/reset-pw2.html" target="_blank">reset-pw2.html</a></td>
+			<td>O</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+		  <td></td>
+		  <td>회원가입</td>
+		  <td>약관동의</td>
+		  <td></td>
+		  <td></td>
+		  <td><a href="html/my/join1.html" target="_blank">join1.html</a></td>
+			<td>O</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+		  <td></td>
+		  <td></td>
+		  <td>기업정보 입력</td>
+		  <td></td>
+		  <td></td>
+		  <td><a href="html/my/join2.html" target="_blank">join2.html</a></td>
+			<td>O</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+		  <td>이메일 인증(모달)</td>
+		  <td></td>
+		  <td><a href="html/my/join2.html" target="_blank">join2.html</a></td>
+			<td>O</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+		  <td></td>
+		  <td></td>
+		  <td>실무자 입력</td>
+		  <td></td>
+		  <td></td>
+		  <td><a href="html/my/join3.html" target="_blank">join3.html</a></td>
+			<td>X</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+		  <td></td>
+		  <td></td>
+		  <td>가입신청 완료</td>
+		  <td></td>
+		  <td></td>
+		  <td><a href="html/my/join4.html" target="_blank">join4.html</a></td>
+			<td>X</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+		  <td></td>
+		  <td>나의정보 관리</td>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+		  <td><a href="html/my/mypage.html" target="_blank">mypage.html</a></td>
+			<td>O</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+		  <td></td>
+		  <td></td>
+		  <td>기업정보 변경(모달)</td>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+			<td>O</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+		  <td></td>
+		  <td></td>
+		  <td>이메일 변경#1(모달)</td>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+			<td>O</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+		  <td></td>
+		  <td></td>
+		  <td>이메일 변경#2(모달)</td>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+			<td>O</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+		  <td></td>
+		  <td></td>
+		  <td>비밀번호 변경(모달)</td>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+			<td>O</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+		  <td></td>
+		  <td>회원탈퇴</td>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+		  <td><a href="html/my/withdrawal.html" target="_blank">withdrawal.html</a></td>
+			<td>O</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+			<td colspan="10" class="blank"></td>
+		</tr>
+		<tr>
+		  <td><strong>su</strong></td>
+		  <td>지원신청</td>
+		  <td>신청서 작성</td>
+		  <td>행사정보</td>
+		  <td></td>
+		  <td></td>
+			<td>O</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+		  <td>주최자정보</td>
+		  <td></td>
+		  <td></td>
+			<td>X</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+		  <td>방역지원</td>
+		  <td></td>
+		  <td></td>
+			<td>O</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+		  <td>파일첨부</td>
+		  <td>MICE지원 신청서(모달)</td>
+		  <td></td>
+			<td>O</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+		  <td></td>
+		  <td>신청서 완료 페이지</td>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+			<td>O</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+		<tr>
+			<td colspan="10" class="blank"></td>
+		</tr>
+		<tr>
+		  <td><strong>wh</strong></td>
+		  <td>WHY 인천</td>
+		  <td>성공사례</td>
+		  <td></td>
+		  <td></td>
+		  <td><a href="html/wh/history.html" target="_blank">history.html</a></td>
+			<td>O</td>
+			<td></td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+	</tbody>
+</table>
 </body>
-
 </html>
