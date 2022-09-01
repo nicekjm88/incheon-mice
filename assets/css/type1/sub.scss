@@ -81,6 +81,7 @@ Create date :
   color: #000;
   font-weight: 700;
   margin-bottom: 20px;
+  margin-top: 74px;
 }
 
 .contents-title2-desc {
@@ -271,15 +272,19 @@ Create date :
   }
 }
 
-.all-check label {
-  font-weight: 700;
-  color: #000;
-  font-size: 1.8rem;
+.all-check {
+  margin-top: 80px;
+
+  label {
+    font-weight: 700;
+    color: #000;
+    font-size: 1.8rem;
+  }
 }
 
 /* 회원가입 프로세스 */
 .join-process {
-  padding: 80px 0;
+  padding: 80px 0 0;
 
   > li {
     padding-left: 130px;
@@ -324,6 +329,7 @@ Create date :
       }
     }
   }
+
 }
 
 /* 로그인 */
@@ -515,12 +521,24 @@ Create date :
     background-color: #f8f8f8;
   }
 
-  ul {
+  ul,
+  ol {
     > li {
       margin-bottom: 20px;
+      line-height: 1.6;
 
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+
+    &.order-list {
+      font-size: 1.8rem;
+      color: #555;
+
+      strong {
+        display: block;
+        margin-bottom: 10px;
       }
     }
   }

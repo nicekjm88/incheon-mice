@@ -80,6 +80,7 @@ Create date :
   color: #000;
   font-weight: 700;
   margin-bottom: 20px;
+  margin-top: 74px;
 }
 
 .contents-title2-desc {
@@ -258,6 +259,10 @@ Create date :
   content: "\e944";
 }
 
+.all-check {
+  margin-top: 80px;
+}
+
 .all-check label {
   font-weight: 700;
   color: #000;
@@ -266,7 +271,7 @@ Create date :
 
 /* 회원가입 프로세스 */
 .join-process {
-  padding: 80px 0;
+  padding: 80px 0 0;
 }
 
 .join-process > li {
@@ -499,11 +504,26 @@ Create date :
   background-color: #f8f8f8;
 }
 
-.box ul > li {
+.box ul > li,
+.box ol > li {
   margin-bottom: 20px;
+  line-height: 1.6;
 }
 
-.box ul > li:last-child {
+.box ul > li:last-child,
+.box ol > li:last-child {
   margin-bottom: 0;
+}
+
+.box ul.order-list,
+.box ol.order-list {
+  font-size: 1.8rem;
+  color: #555;
+}
+
+.box ul.order-list strong,
+.box ol.order-list strong {
+  display: block;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=sub.css.map */

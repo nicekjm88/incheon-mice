@@ -202,16 +202,17 @@ textarea {
 }
 
 /* font-size */
-.fs12 {font-size: 1.2rem}
-.fs13 {font-size: 1.3rem}
-.fs14 {font-size: 1.4rem}
-.fs15 {font-size: 1.5rem}
-.fs16 {font-size: 1.6rem}
-.fs17 {font-size: 1.7rem}
-.fs18 {font-size: 1.8rem}
-.fs19 {font-size: 1.9rem}
-.fs20 {font-size: 2rem}
-.fs21 {font-size: 2.1rem}
+.fs12 {font-size: 1.2rem !important}
+.fs13 {font-size: 1.3rem !important}
+.fs14 {font-size: 1.4rem !important}
+.fs15 {font-size: 1.5rem !important}
+.fs16 {font-size: 1.6rem !important}
+.fs17 {font-size: 1.7rem !important}
+.fs18 {font-size: 1.8rem !important}
+.fs19 {font-size: 1.9rem !important}
+.fs20 {font-size: 2rem !important}
+.fs21 {font-size: 2.1rem !important}
+.fs30 {font-size: 3rem !important}
 
 /* Skip to content */
 .skip-to {
@@ -494,6 +495,73 @@ textarea.form-control {
   background-color: #006064;
 }
 
+/* 체크박스 */
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label {
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid #006064;
+  vertical-align: middle;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked + label:before {
+  content: "\e928";
+  font-family: "xeicon";
+  font-weight: 700;
+  color: #006064;
+  border-color: #006064;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* 라디오 버튼 */
+.custom-radio {
+  margin-bottom: 14px;
+}
+.custom-radio .form-group {
+  margin-top: 10px;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label {
+  cursor: pointer;
+}
+
+input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid #dfdfdf;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+input[type="radio"]:checked + label:before {
+  content: "●";
+  font-family: "xeicon";
+  font-weight: 700;
+  color: #006064;
+  border-color: #006064;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.4;
+}
+
 /* 모달 */
 .close {
   float: right;
@@ -666,33 +734,5 @@ button.close {
   color: #006064;
 }
 
-/* 체크박스 */
-input[type="checkbox"] {
-  display: none;
-}
-input[type="checkbox"] + label {
-  cursor: pointer;
-}
 
-input[type="checkbox"] + label:before {
-  content: "";
-  display: inline-block;
-  width: 25px;
-  height: 26px;
-  line-height: 26px;
-  border: 1px solid #006064;
-  vertical-align: middle;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-input[type="checkbox"]:checked + label:before {
-  content: "\e928";
-  font-family: "xeicon";
-  font-weight: 700;
-  color: #006064;
-  border-color: #006064;
-  font-size: 16px;
-  text-align: center;
-}
 
