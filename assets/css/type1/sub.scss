@@ -5,6 +5,47 @@ Create date :
 -------------------------------------------------*/
 @import "../mixin";
 
+#footer {
+  padding-top: 160px;
+  clear: both;
+  display: block;
+  width: 100%;
+  padding-bottom: 80px;
+
+  .rule-list {
+    display: block;
+    float: left;
+    margin-left: 0;
+    padding-left: 130px;
+
+    > li {
+      position: relative;
+      float: left;
+
+      &::after {
+        content: '';
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: #666;
+        position: absolute;
+        top: 50%;
+        right: -11px;
+      }
+
+      &:last-child::after {
+        display: none;
+      }
+    }
+  }
+
+  .copyright {
+    float: right;
+    margin-top: 0;
+  }
+
+}
+
 .wrap-container {
   padding-top: 116px;
   height: 100vh;
@@ -40,6 +81,14 @@ Create date :
   color: #000;
   font-weight: 700;
   margin-bottom: 20px;
+}
+
+.contents-title2-desc {
+  font-size: 2.0rem;
+  color: #555;
+  padding-top: 16px;
+  display: inline-block;
+  padding-left: 10px;
 }
 
 /* breadcrumb */
@@ -83,6 +132,7 @@ Create date :
 
 /* card style */
 .card {
+  position: relative;
   border: 1px solid #e6eeef;
   border-top: 2px solid #006064;
   padding: 80px 330px;
@@ -96,7 +146,15 @@ Create date :
     margin-top: 30px;
     margin-bottom: 15px;
     display: block;
-    font-weight: 500;
+    font-weight: 700;
+
+    &.first {
+      margin-top: 0;
+    }
+
+    & + .btn-white {
+      margin-top: 0 !important;
+    }
   }
 
   &-desc {
@@ -109,7 +167,27 @@ Create date :
     margin: 30px 0;
     border-top: 1px solid #ddd;
   }
+
+  .form-check-group {
+    margin-top: 30px;
+  }
+
+  .card-bottom-btn {
+    position: absolute;
+    bottom: -130px;
+    right: 0;
+  }
 }
+.card-top {
+  padding-top: 74px;
+  padding-bottom: 26px;
+
+  .contents-title2 {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }  
+}
+
 
 /* 아코디언 카드스타일 */
 .accordion {
@@ -393,4 +471,57 @@ Create date :
 
 .form-group.multiple {
   margin-top: 10px;
+}
+
+/* 마이페이지 */
+.area-mypage {
+  padding-top: 70px;
+
+  .contents-title {
+    border-bottom: 1px solid #e6eeef;
+    padding-bottom: 120px;
+  }
+
+  .card {
+    .btn-white {
+      margin-top: 20px;
+    }
+  }
+  
+}
+
+/* 이메일/문자 수신 동의 */
+.send-agree {
+  position: relative;
+  text-align: center;
+
+  &-title {
+    color: #000;
+    font-size: 3.0rem;    
+  }
+  &-desc {
+    font-size: 1.8rem;
+    color: #555;
+    padding: 20px 0 40px;
+  }
+}
+
+.box {
+  padding: 40px;
+  text-align: left;
+  margin-bottom: 40px;
+
+  &.box-gray {
+    background-color: #f8f8f8;
+  }
+
+  ul {
+    > li {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

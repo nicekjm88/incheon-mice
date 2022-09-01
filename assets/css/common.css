@@ -72,7 +72,7 @@ Create date :
   font-style: normal;
 }
 
-/* reset.css(plan-i standard) */
+/* reset.css */
 html {
   font-size: 10px;
   box-sizing: border-box;
@@ -148,7 +148,7 @@ input {
 }
 b,
 strong {
-  font-weight: normal;
+  font-weight: 700;
 }
 address,
 em,
@@ -200,6 +200,18 @@ textarea {
   font-weight: inherit;
   margin: 0;
 }
+
+/* font-size */
+.fs12 {font-size: 1.2rem}
+.fs13 {font-size: 1.3rem}
+.fs14 {font-size: 1.4rem}
+.fs15 {font-size: 1.5rem}
+.fs16 {font-size: 1.6rem}
+.fs17 {font-size: 1.7rem}
+.fs18 {font-size: 1.8rem}
+.fs19 {font-size: 1.9rem}
+.fs20 {font-size: 2rem}
+.fs21 {font-size: 2.1rem}
 
 /* Skip to content */
 .skip-to {
@@ -345,6 +357,16 @@ textarea.form-control {
   transition: all 0.25s ease;
   -webkit-transition: all 0.25s ease;
 }
+
+.btn.btn-small {
+  height: 60px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #555;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
 .btn.btn-xs {
   width: 75px;
 }
@@ -386,11 +408,22 @@ textarea.form-control {
   color: #fff;
   border-color: #006064;
 }
+
+.btn.btn-white {
+  background-color: #ddd;
+  color: #555;
+  border-color: #ddd;
+  background-color: #fff;
+}
+
 .btn-with-label {
   margin-top: 70px;
 }
 .btn-submit {
   padding-top: 30px;
+}
+.btn-submit2 {
+  padding-top: 60px;
 }
 
 .btn-group {
@@ -401,6 +434,11 @@ textarea.form-control {
   float: left;
   width: calc(50% - 12px);
   margin: 0 6px;
+}
+.btn-group.btn-group-final {
+  width: 690px;
+  margin: 0 auto;
+  position: relative;
 }
 
 /* ...생성 */
@@ -547,7 +585,7 @@ button.close {
 }
 .modal-body {
   position: relative;
-  padding: 40px;
+  padding: 55px;
   letter-spacing: -0.05em;
   font-size: 1.8rem;
   color: #555;
@@ -571,7 +609,7 @@ button.close {
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 600px;
+    width: 780px;
     margin: 30px auto;
   }
   .modal-content {
@@ -657,3 +695,4 @@ input[type="checkbox"]:checked + label:before {
   font-size: 16px;
   text-align: center;
 }
+
