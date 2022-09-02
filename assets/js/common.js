@@ -12,10 +12,19 @@ $(function () {
     }
   });
 
+  //아코디언
   $(".accordion > li .open").on("click", function () {
     $(this).parents("li").toggleClass("is-active");
     $(this).parent().next().slideToggle();
   });
+
+  //aos init
+  AOS.init({
+    duration: 750,
+    easing: 'ease-in-out',
+    offset: -50,
+  });
+
 });
 
 $(window).resize(function () {
@@ -31,6 +40,7 @@ $(window).on("load", function () {
   $(window).trigger("resize");
 });
 
+//all check
 (function (global, document) {
   "use strict";
 
