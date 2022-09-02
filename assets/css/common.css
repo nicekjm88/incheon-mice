@@ -203,17 +203,39 @@ textarea {
 }
 
 /* font-size */
-.fs12 {font-size: 1.2rem !important}
-.fs13 {font-size: 1.3rem !important}
-.fs14 {font-size: 1.4rem !important}
-.fs15 {font-size: 1.5rem !important}
-.fs16 {font-size: 1.6rem !important}
-.fs17 {font-size: 1.7rem !important}
-.fs18 {font-size: 1.8rem !important}
-.fs19 {font-size: 1.9rem !important}
-.fs20 {font-size: 2rem !important}
-.fs21 {font-size: 2.1rem !important}
-.fs30 {font-size: 3rem !important}
+.fs12 {
+  font-size: 1.2rem !important;
+}
+.fs13 {
+  font-size: 1.3rem !important;
+}
+.fs14 {
+  font-size: 1.4rem !important;
+}
+.fs15 {
+  font-size: 1.5rem !important;
+}
+.fs16 {
+  font-size: 1.6rem !important;
+}
+.fs17 {
+  font-size: 1.7rem !important;
+}
+.fs18 {
+  font-size: 1.8rem !important;
+}
+.fs19 {
+  font-size: 1.9rem !important;
+}
+.fs20 {
+  font-size: 2rem !important;
+}
+.fs21 {
+  font-size: 2.1rem !important;
+}
+.fs30 {
+  font-size: 3rem !important;
+}
 
 /* Skip to content */
 .skip-to {
@@ -724,9 +746,6 @@ button.close {
   background-color: transparent;
   border: 0;
 }
-.hidden {
-  display: none !important;
-}
 .affix {
   position: fixed;
 }
@@ -735,5 +754,9 @@ button.close {
   color: #006064;
 }
 
-
-
+@media (max-width: 767px) {
+  .modal-body {
+    padding: 30px;
+    font-size: 1.6rem;
+  }
+}

@@ -3,7 +3,7 @@
 Author : 
 Create date : 
 -------------------------------------------------*/
-@import url(e:\Study\incheon-mice\assets\css\grid.min.css);
+@import url(c:\Users\5000w\Documents\workspace\sidejob\incheon-mice\assets\css\grid.min.css);
 #wrap {
   overflow: hidden;
 }
@@ -222,7 +222,8 @@ Create date :
 }
 
 @-webkit-keyframes smallbig {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
@@ -233,7 +234,8 @@ Create date :
 }
 
 @keyframes smallbig {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
@@ -272,8 +274,8 @@ Create date :
   width: 100%;
   background-color: #fff;
   height: 100%;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .all-menu > nav {
@@ -293,7 +295,7 @@ Create date :
 }
 
 .all-menu > nav .all-menu-list > li > a::before {
-  content: '';
+  content: "";
   width: 250px;
   height: 1px;
   background-color: #e0e0e0;
@@ -357,7 +359,7 @@ Create date :
 
 @media (min-width: 1281px) {
   .all-menu > nav {
-    padding-top: 308px;
+    padding-top: 200px;
     padding-left: 0;
     margin: 0 auto;
     width: 1600px;
