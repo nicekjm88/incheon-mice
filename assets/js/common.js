@@ -23,6 +23,7 @@ $(function () {
     duration: 750,
     easing: 'ease-in-out',
     offset: -50,
+    anchorPosition: 'top-bottom'
   });
 
 });

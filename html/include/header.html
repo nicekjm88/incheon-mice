@@ -56,13 +56,73 @@
     <li class="language">
       <a href="#"><img src="/assets/images/i_language.gif" alt="언어변경"></a>
     </li>
-    <li class="menu">
-      <a href="#">대매뉴</a>
+    <li class="menu">      
+      <button type="button" class="hamburger-wrap">        
+        <span class="hidden">대매뉴</span>
+        <div class="hamburger" id="hamburger-11">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>        
+      </button>
+      
+      <div class="all-menu">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Why 인천</a>
+              <ul>
+                <li><a href="#">Top Reasons</a></li>
+                <li><a href="#">성공사례</a></li>
+                <li><a href="#">제안신청</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">MICE 인프라</a>
+              <ul>
+                <li><a href="#">베뉴검색</a></li>
+                <li><a href="#">얼라이언스</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">MICE 지원</a>
+              <ul>
+                <li><a href="#">국내/국제회의</a></li>
+                <li><a href="#">기업회의/인센티브</a></li>
+                <li><a href="#">지원신청</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">커뮤니티</a>
+              <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">뉴스레터</a></li>
+                <li><a href="#">홍보자료</a></li>
+                <li><a href="#">보고서</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">인천CVB</a>
+              <ul>
+                <li><a href="#">MICE뷰로</a></li>
+                <li><a href="#">MICE지원센터</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </li>
   </ul>
 </div>
 
 <script>
+  //햄버거 애니메이션
+  $(".hamburger").click(function(){
+    $(this).toggleClass("is-active");
+
+    $('.all-menu').toggleClass('is-active');
+  });
+
   //대매뉴
   $(".gnb").on("mouseenter focusin", function () {
     $(this).parents("#header").addClass("is-active");
