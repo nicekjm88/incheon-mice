@@ -159,6 +159,7 @@ button {
   border: 0;
   background: none;
   cursor: pointer;
+  color: inherit;
 }
 hr {
   margin: 0;

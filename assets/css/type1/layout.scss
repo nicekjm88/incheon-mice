@@ -6,8 +6,12 @@ Create date :
 @import "../mixin";
 @import "../grid.min.css";
 
-*:lang(en) {
-  font-family: "Ubuntu", sans-serif;
+// *:lang(en) {
+//   font-family: "Ubuntu", sans-serif;
+// }
+
+#wrap {
+  overflow: hidden;
 }
 
 #header {
@@ -36,7 +40,7 @@ Create date :
   .gnb-wrap {
     position: relative;
     z-index: 9;
-    nav {
+    > nav {
       width: 960px;
       margin: 0 auto;
       font-weight: 500;
@@ -88,10 +92,9 @@ Create date :
             }
           }
         }
-      }
-
-      @media (max-width: 1280px) {
-        display: none;
+        @media (max-width: 1280px) {
+          display: none;
+        }
       }
     }
 
@@ -103,8 +106,14 @@ Create date :
 
       > li {
         float: left;
-        margin: 0 20px;
+        margin: 0 15px;
+        text-align: center;
+        width: 30px;
+        height: 30px;   
         
+        > a {
+          vertical-align: middle;
+        }
 
         &.menu {
           width: 30px;
@@ -181,7 +190,9 @@ Create date :
 .hamburger-wrap {
   position: relative;
   z-index: 10;
+  padding: 0;
 }
+
 .hamburger .line {
   width: 23px;
   height: 2px;
@@ -253,21 +264,109 @@ Create date :
 /* all-menu */
 .all-menu {
   position: fixed;
-  top: -1000px;
-  left: 0;
+  top: 0;
+  left: -100%;
   width: 100%;
   background-color: #fff;
-  height: 1000px;
-  transition: all .5s ease;
-  padding-top: 300px;
+  height: 100%;
+  transition: all .3s ease;
+
+  > nav {
+    padding-top: 100px;
+    padding-left: 40px;
+    font-family: "S-CoreDream";
+    text-align: left;
+
+    .all-menu-list {
+      > li {
+        margin-bottom: 40px;
+
+        > a {
+          font-size: 3.5rem;
+          position: relative;
+
+          &::before {
+            content: '';
+            width: 250px;
+            height: 1px;
+            background-color: #e0e0e0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: none;
+
+            @media (min-width: 1281px) {
+              display: block;
+            }
+          }
+
+          @media (min-width: 1281px) {
+            padding-bottom: 40px;
+            margin-bottom: 20px;
+            display: block;
+          }
+        }
+
+        .depth2 {
+          padding-top: 20px;
+          padding-left: 20px;
+          display: none;
+
+          > li {
+            > a {
+              color: #666;
+              font-size: 2.5rem;
+              line-height: 1.6;
+
+              @media (min-width: 1281px) {
+                font-weight: 400;
+                color: #000;
+                font-family: "NotoSansKR";
+                font-size: 2.3rem;
+              }              
+            }
+          }
+
+          @media (min-width: 1281px) {
+            display: block;
+          }
+        }
+
+        &.is-active {
+          .depth2 {
+            display: block;
+          }
+        }
+
+        @media (min-width: 1281px) {
+          width: 20%;
+          float: left;
+        }
+      }
+    }
+
+    @media (min-width: 1281px) {
+      padding-top: 308px;
+      padding-left: 0;
+      margin: 0 auto;
+      width: 1600px;
+    }
+  }
 
   &.is-active {
-    top: 0;
+    left: 0;
+
+    @media (min-width: 1281px) {
+      top: 0;
+    }
   }
+
+  @media (min-width: 1281px) {
+    top: -100%;
+    left: 0;
+  }
+
 }
-
-
-
 
 /* 풋터 */
 #footer {
@@ -307,6 +406,10 @@ Create date :
 }
 
 @media (max-width: 1280px) {
+  .utils .my-page,
+  .utils .language {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {

@@ -4,8 +4,8 @@ Author :
 Create date : 
 -------------------------------------------------*/
 @import url(e:\Study\incheon-mice\assets\css\grid.min.css);
-*:lang(en) {
-  font-family: "Ubuntu", sans-serif;
+#wrap {
+  overflow: hidden;
 }
 
 #header {
@@ -40,7 +40,7 @@ Create date :
   z-index: 9;
 }
 
-#header .gnb-wrap nav {
+#header .gnb-wrap > nav {
   width: 960px;
   margin: 0 auto;
   font-weight: 500;
@@ -49,18 +49,18 @@ Create date :
   padding-top: 40px;
 }
 
-#header .gnb-wrap nav .gnb > li {
+#header .gnb-wrap > nav .gnb > li {
   position: relative;
   display: inline-block;
   text-align: center;
   margin: 0 40px;
 }
 
-#header .gnb-wrap nav .gnb > li > .menu-label {
+#header .gnb-wrap > nav .gnb > li > .menu-label {
   font-family: "S-CoreDream";
 }
 
-#header .gnb-wrap nav .gnb > li .depth2 {
+#header .gnb-wrap > nav .gnb > li .depth2 {
   opacity: 0;
   visibility: hidden;
   min-height: 0;
@@ -74,7 +74,7 @@ Create date :
           transform: translateX(-50%);
 }
 
-#header .gnb-wrap nav .gnb > li .depth2 > li {
+#header .gnb-wrap > nav .gnb > li .depth2 > li {
   display: block;
   font-size: 1.8rem;
   color: #555;
@@ -82,17 +82,17 @@ Create date :
   padding-bottom: 15px;
 }
 
-#header .gnb-wrap nav .gnb > li .depth2 > li > a:hover {
+#header .gnb-wrap > nav .gnb > li .depth2 > li > a:hover {
   font-weight: 700;
   color: #006064;
 }
 
-#header .gnb-wrap nav .gnb > li.is-active > .menu-label {
+#header .gnb-wrap > nav .gnb > li.is-active > .menu-label {
   color: #006064;
 }
 
 @media (max-width: 1280px) {
-  #header .gnb-wrap nav {
+  #header .gnb-wrap > nav .gnb {
     display: none;
   }
 }
@@ -106,7 +106,14 @@ Create date :
 
 #header .gnb-wrap .utils > li {
   float: left;
-  margin: 0 20px;
+  margin: 0 15px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+}
+
+#header .gnb-wrap .utils > li > a {
+  vertical-align: middle;
 }
 
 #header .gnb-wrap .utils > li.menu {
@@ -187,6 +194,7 @@ Create date :
 .hamburger-wrap {
   position: relative;
   z-index: 10;
+  padding: 0;
 }
 
 .hamburger .line {
@@ -259,18 +267,118 @@ Create date :
 /* all-menu */
 .all-menu {
   position: fixed;
-  top: -1000px;
-  left: 0;
+  top: 0;
+  left: -100%;
   width: 100%;
   background-color: #fff;
-  height: 1000px;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  padding-top: 300px;
+  height: 100%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.all-menu > nav {
+  padding-top: 100px;
+  padding-left: 40px;
+  font-family: "S-CoreDream";
+  text-align: left;
+}
+
+.all-menu > nav .all-menu-list > li {
+  margin-bottom: 40px;
+}
+
+.all-menu > nav .all-menu-list > li > a {
+  font-size: 3.5rem;
+  position: relative;
+}
+
+.all-menu > nav .all-menu-list > li > a::before {
+  content: '';
+  width: 250px;
+  height: 1px;
+  background-color: #e0e0e0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+@media (min-width: 1281px) {
+  .all-menu > nav .all-menu-list > li > a::before {
+    display: block;
+  }
+}
+
+@media (min-width: 1281px) {
+  .all-menu > nav .all-menu-list > li > a {
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    display: block;
+  }
+}
+
+.all-menu > nav .all-menu-list > li .depth2 {
+  padding-top: 20px;
+  padding-left: 20px;
+  display: none;
+}
+
+.all-menu > nav .all-menu-list > li .depth2 > li > a {
+  color: #666;
+  font-size: 2.5rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 1281px) {
+  .all-menu > nav .all-menu-list > li .depth2 > li > a {
+    font-weight: 400;
+    color: #000;
+    font-family: "NotoSansKR";
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1281px) {
+  .all-menu > nav .all-menu-list > li .depth2 {
+    display: block;
+  }
+}
+
+.all-menu > nav .all-menu-list > li.is-active .depth2 {
+  display: block;
+}
+
+@media (min-width: 1281px) {
+  .all-menu > nav .all-menu-list > li {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 1281px) {
+  .all-menu > nav {
+    padding-top: 308px;
+    padding-left: 0;
+    margin: 0 auto;
+    width: 1600px;
+  }
 }
 
 .all-menu.is-active {
-  top: 0;
+  left: 0;
+}
+
+@media (min-width: 1281px) {
+  .all-menu.is-active {
+    top: 0;
+  }
+}
+
+@media (min-width: 1281px) {
+  .all-menu {
+    top: -100%;
+    left: 0;
+  }
 }
 
 /* 풋터 */
@@ -329,6 +437,13 @@ Create date :
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (max-width: 1280px) {
+  .utils .my-page,
+  .utils .language {
+    display: none;
   }
 }
 

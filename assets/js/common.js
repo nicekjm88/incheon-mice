@@ -18,21 +18,14 @@ $(function () {
     $(this).parent().next().slideToggle();
   });
 
-  //aos init
-  AOS.init({
-    duration: 750,
-    easing: 'ease-in-out',
-    offset: -50,
-    anchorPosition: 'top-bottom'
-  });
-
 });
 
 $(window).resize(function () {
   if ($(window).width() < 767) {
-    $("#gnb>li>a").click(function () {
+    $(".all-menu-list>li").eq(0).addClass('is-active');
+    $(".all-menu-list>li>a").click(function () {
       $(this).attr("href", "javascript:void(0)");
-      $(this).parent().addClass("active").siblings().removeClass("active");
+      $(this).parent().addClass("is-active").siblings().removeClass("is-active");
     });
   }
 });
