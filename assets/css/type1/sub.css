@@ -526,4 +526,42 @@ Create date :
   display: block;
   margin-bottom: 10px;
 }
+
+@media (max-width: 1280px) {
+  .wrap-container {
+    padding: 80px 15px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .area-reset {
+    padding-top: 35px;
+    background-size: 50%;
+    background-position: right 150px;
+  }
+  .contents-title {
+    font-size: 3.2rem;
+  }
+  .contents-title + p {
+    font-size: 1.6rem;
+  }
+  .card {
+    padding: 40px 20px;
+  }
+  #footer {
+    margin-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #footer .rule-list {
+    padding-left: 0;
+    float: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #footer .copyright {
+    float: inherit;
+  }
+}
 /*# sourceMappingURL=sub.css.map */
