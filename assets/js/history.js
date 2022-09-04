@@ -8,7 +8,17 @@ $(function () {
     reverse: true,
   })
     .setClassToggle(".intro-anchor", "is-active")
-    .addTo(controller);
+    // .addIndicators()
+    .addTo(controller)
+    .on("start end enter leave", function (e) {
+      if (e.state === "DURING" || e.state === "AFTER") {
+        $("#header").addClass("is-hide");
+        $(".history-navigation.vertical").fadeIn();
+      } else if (e.state === "BEFORE") {
+        $("#header").removeClass("is-hide");
+        $(".history-navigation.vertical").fadeOut();
+      }
+    });
   var scene2 = new ScrollMagic.Scene({
     triggerElement: "#section-1",
     duration: $("section").height(),
@@ -111,12 +121,18 @@ $(function () {
     //   name: "[big-txt]",
     // })
     .addTo(controller);
-});
 
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 500) {
-    $(".history-navigation.vertical").fadeIn();
-  } else {
-    $(".history-navigation.vertical").fadeOut();
-  }
+  var tween4 = TweenMax.to(".bg-txt.type3", 1, {
+    transform: "translate3d(-200px,0,0)",
+    XPercent: -100,
+  });
+  var scene8 = new ScrollMagic.Scene({
+    offset: 5700,
+    duration: 1000,
+  })
+    .setTween(tween4)
+    // .addIndicators({
+    //   name: "[big-txt]",
+    // })
+    .addTo(controller);
 });

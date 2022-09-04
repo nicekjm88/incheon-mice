@@ -184,6 +184,10 @@ Create date :
   @media (max-width: 767px) {
     height: 80px;
   }
+
+  &.is-hide {
+    top: -116px;
+  }
 }
 
 /* 햄버거 애니메이션 */

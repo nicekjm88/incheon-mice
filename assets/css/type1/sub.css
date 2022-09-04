@@ -536,10 +536,27 @@ Create date :
 }
 
 /* WHY인천 > 성공사례 */
-.area-history .contents-title {
-  border-bottom: 1px solid #e6eeef;
+.area-history {
+  padding-top: 70px;
+}
+
+.area-history .horizontal-line {
+  display: block;
   padding-bottom: 80px;
   margin-bottom: 80px;
+  position: relative;
+}
+
+.area-history .horizontal-line::after {
+  content: "";
+  width: 100vw;
+  height: 1px;
+  background-color: #e6eeef;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 .area-history .main-ment {
@@ -558,13 +575,12 @@ Create date :
 }
 
 .area-history .history-navigation .controller-item {
-  border-left: 1px solid #555;
   font-size: 1.8rem;
   color: #555;
   display: block;
-  border-left: 1px solid #e5e5e5;
   font-family: "S-CoreDream";
   font-weight: 300;
+  border-right: 1px solid #e5e5e5;
 }
 
 .area-history .history-navigation .controller-item strong {
@@ -572,10 +588,6 @@ Create date :
   font-size: 5rem;
   display: block;
   color: #000;
-}
-
-.area-history .history-navigation .controller-item:last-child {
-  border-right: 1px solid #e5e5e5;
 }
 
 .area-history .history-navigation .controller-item.is-active strong {
@@ -768,7 +780,7 @@ Create date :
 .area-history .history .bg-txt {
   position: absolute;
   z-index: -1;
-  top: 85vw;
+  top: 88vw;
   font-size: 25rem;
   color: #f5f5f5;
   font-family: "S-CoreDream";
@@ -777,7 +789,11 @@ Create date :
 }
 
 .area-history .history .bg-txt.type2 {
-  top: 168vw;
+  top: 170vw;
+}
+
+.area-history .history .bg-txt.type3 {
+  top: 323vw;
 }
 
 @media (max-width: 1280px) {

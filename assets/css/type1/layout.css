@@ -190,6 +190,10 @@ Create date :
   }
 }
 
+#header.is-hide {
+  top: -116px;
+}
+
 /* 햄버거 애니메이션 */
 .hamburger-wrap {
   position: relative;

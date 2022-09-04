@@ -553,11 +553,26 @@ Create date :
 
 /* WHY인천 > 성공사례 */
 .area-history {
-  .contents-title {
-    border-bottom: 1px solid #e6eeef;
+  padding-top: 70px;
+
+  .horizontal-line {
+    display: block;
     padding-bottom: 80px;
     margin-bottom: 80px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100vw;
+      height: 1px;
+      background-color: #e6eeef;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
   }
+
   .main-ment {
     font-size: 4rem;
     color: #555;
@@ -572,23 +587,18 @@ Create date :
     margin: 90px 0 180px;
 
     .controller-item {
-      border-left: 1px solid #555;
       font-size: 1.8rem;
       color: #555;
       display: block;
-      border-left: 1px solid #e5e5e5;
       font-family: "S-CoreDream";
       font-weight: 300;
+      border-right: 1px solid #e5e5e5;
 
       strong {
         font-weight: 100;
         font-size: 5rem;
         display: block;
         color: #000;
-      }
-
-      &:last-child {
-        border-right: 1px solid #e5e5e5;
       }
 
       &.is-active {
@@ -772,7 +782,7 @@ Create date :
     .bg-txt {
       position: absolute;
       z-index: -1;
-      top: 85vw;
+      top: 88vw;
       font-size: 25rem;
       color: #f5f5f5;
       font-family: "S-CoreDream";
@@ -780,7 +790,10 @@ Create date :
       right: 0;
 
       &.type2 {
-        top: 168vw;
+        top: 170vw;
+      }
+      &.type3 {
+        top: 323vw;
       }
     }
   }
