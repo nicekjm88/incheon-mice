@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>인천 - 세계에서 가장 가까운 마이스 특별시</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/common.css">
   <link rel="stylesheet" href="/assets/css/grid.min.css">
   <link rel="stylesheet" href="/assets/css/type1/layout.css">
@@ -24,56 +25,513 @@
 
     <div id="contents">
       <div class="wrap-container">
-        <div class="container">
-          <div class="area-history row">
-            <div class="col-md-12">
-              <div>
-                <!-- breadcrumb -->
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/html/index.html"> <i class="xi-home"></i> <span
-                          class="hidden">Home</span></a></li>
-                    <li class="breadcrumb-item" aria-current="page">WHY인천</li>
-                    <li class="breadcrumb-item active" aria-current="page">성공사례</li>
-                  </ol>
-                </nav>
+        <div class="area-history">
+          <!-- breadcrumb -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/html/index.html"> <i class="xi-home"></i> <span
+                    class="hidden">Home</span></a></li>
+              <li class="breadcrumb-item" aria-current="page">WHY인천</li>
+              <li class="breadcrumb-item active" aria-current="page">성공사례</li>
+            </ol>
+          </nav>
 
-                <h1 class="contents-title txt-center"><span>인천에서 성공적으로 마친</span>MICE행사를 둘러보세요!</h1>
+          <h1 class="contents-title txt-center"><span>인천에서 성공적으로 마친</span>MICE행사를 둘러보세요!</h1>
 
-                <div class="history container">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="history-date">
-                        2022. 06
+          <p class="main-ment">당신의 행사도 기억에 남을 수 있도록 <strong>인천이 함께</strong>합니다.</p>
+
+          <div class="history-navigation">
+            <nav role="navigation">
+              <div class="container">
+                <div class="row txt-center">
+                  <div class="col-md-offset-1 col-md-2">
+                    <a href="#intro" class="controller-item intro-anchor">
+                      <strong>현재</strong>
+                      2021~2023
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a href="#section-1" class="controller-item anchor1">
+                      <strong>2020</strong>
+                      2016~2020
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a href="#section-2" class="controller-item anchor2">
+                      <strong>2015</strong>
+                      2011~2015
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a href="#section-3" class="controller-item anchor3">
+                      <strong>2010</strong>
+                      2006~2010
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a href="#section-4" class="controller-item anchor4">
+                      <strong>2005</strong>
+                      2005~2009
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+          <div class="history-navigation vertical">
+            <nav role="navigation">
+              <a href="#intro" class="controller-item intro-anchor">
+                <strong>현재</strong>
+                <span>2021~2023</span>
+              </a>
+              <a href="#section-1" class="controller-item anchor1">
+                <strong>2020</strong>
+                <span>2016~2020</span>
+              </a>
+              <a href="#section-2" class="controller-item anchor2">
+                <strong>2015</strong>
+                <span>2011~2015</span>
+              </a>
+              <a href="#section-3" class="controller-item anchor3">
+                <strong>2010</strong>
+                <span>2006~2010</span>
+              </a>
+              <a href="#section-4" class="controller-item anchor4">
+                <strong>2005</strong>
+                <span>2005~2009</span>
+              </a>
+            </nav>
+          </div>
+
+          <main id="intro" role="main">
+            <section class="full-screen" id="start">
+              <div class="history container">
+                <div class="row">
+                  <div class="col-md-8 container">
+                    <div class="history-item row">
+                      <div class="col-md-3">
+                        <div class="history-date" data-aos="fade-right">
+                          2022. 06
+                        </div>
                       </div>
-                      <div class="img-container card-motion">
-                        <div class="d-block-pc motion onTrans">
-                          <img src="../../assets/images/img_history1.jpg" alt="">
-                          <div class="img-holder">
-                            <div class="img-wrap">
-                              <div style="background-image:url('../../assets/images/img_history1.jpg');"></div>
+                      <div class="col-md-9">
+                        <div class="img-container card-motion">
+                          <div class="d-block-pc motion">
+                            <img src="../../assets/images/img_history1.jpg" alt="">
+                            <div class="img-holder">
+                              <div class="img-wrap">
+                                <div style="background-image:url('../../assets/images/img_history1.jpg');"></div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <!-- <div class="d-block-m motion onTrans" style="">
-                          <img src="../../assets/images/img_history1.jpg" alt="">
-                          <div class="img-holder">
-                            <div class="img-wrap">
-                              <div style="background-image:url('../../assets/images/img_history1.jpg')"></div>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄, 임시 데이터를 입력합니다</p>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄, 임시 데이터를 입력합니다</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bg-txt type1">
+                    2021~2023
+                  </div>
+
+                  <div class="col-md-offset-4 col-md-8 container">
+                    <div class="history-item row">
+                      <div class="col-md-3">
+                        <div class="history-date" data-aos="fade-right">
+                          2022. 03
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="img-container card-motion">
+                          <div class="d-block-pc motion">
+                            <img src="../../assets/images/img_history2.jpg" alt="">
+                            <div class="img-holder">
+                              <div class="img-wrap">
+                                <div style="background-image:url('../../assets/images/img_history2.jpg');"></div>
+                              </div>
                             </div>
                           </div>
-                        </div> -->
+                        </div>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄, 임시 데이터를 입력합니다</p>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄</p>
                       </div>
-                      <p>연도별 행사 타이틀은 최대 2줄, 임시 데이터를 입력합니다</p>
+                    </div>
+                  </div>
 
+                  <div class="col-md-8 container">
+                    <div class="history-item row">
+                      <div class="col-md-3">
+                        <div class="history-date" data-aos="fade-right">
+                          2021. 12
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <!-- <div class="img-container card-motion">
+                              <div class="d-block-pc motion">
+                                <img src="../../assets/images/img_history1.jpg" alt="">
+                                <div class="img-holder">
+                                  <div class="img-wrap">
+                                    <div style="background-image:url('../../assets/images/img_history1.jpg');"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div> -->
+                        <p class="pitcture-desc" data-aos="fade-up">
+                          <strong>12월의 첫번째 행사</strong>
+                          12월의 첫번째 행사의 설명을 입력합니다. 임시데이터 입니다
+                        </p>
+                        <p class="pitcture-desc" data-aos="fade-up">
+                          <strong>12월의 첫번째 행사</strong>
+                          12월의 두번째 행사의 설명을 입력합니다. 임시데이터를 입력합니다!<br>두번째 행사는 성황리에 개최 되었습니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bg-txt type2">
+                    2021~2023
+                  </div>
+
+                  <div class="col-md-offset-4 col-md-8 container">
+                    <div class="history-item row">
+                      <div class="col-md-3">
+                        <div class="history-date" data-aos="fade-right">
+                          2019. 12
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="img-container card-motion">
+                          <div class="d-block-pc motion">
+                            <img src="../../assets/images/img_history3.jpg" alt="">
+                            <div class="img-holder">
+                              <div class="img-wrap">
+                                <div style="background-image:url('../../assets/images/img_history3.jpg');"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄, 임시 데이터를 입력합니다</p>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-8 container">
+                    <div class="history-item row">
+                      <div class="col-md-3">
+                        <div class="history-date" data-aos="fade-right">
+                          2019. 08
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="img-container card-motion">
+                          <div class="d-block-pc motion">
+                            <img src="../../assets/images/img_history4.jpg" alt="">
+                            <div class="img-holder">
+                              <div class="img-wrap">
+                                <div style="background-image:url('../../assets/images/img_history4.jpg');"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄, 임시 데이터를 입력합니다</p>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-offset-4 col-md-8 container">
+                    <div class="history-item row">
+                      <div class="col-md-3">
+                        <div class="history-date" data-aos="fade-right">
+                          2017. 06
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="img-container card-motion">
+                          <div class="d-block-pc motion">
+                            <img src="../../assets/images/img_history5.jpg" alt="">
+                            <div class="img-holder">
+                              <div class="img-wrap">
+                                <div style="background-image:url('../../assets/images/img_history5.jpg');"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄, 임시 데이터를 입력합니다</p>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-8 container">
+                    <div class="history-item row">
+                      <div class="col-md-3">
+                        <div class="history-date" data-aos="fade-right">
+                          2015. 08
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="img-container card-motion">
+                          <div class="d-block-pc motion">
+                            <img src="../../assets/images/img_history6.jpg" alt="">
+                            <div class="img-holder">
+                              <div class="img-wrap">
+                                <div style="background-image:url('../../assets/images/img_history6.jpg');"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄, 임시 데이터를 입력합니다</p>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-offset-4 col-md-8 container">
+                    <div class="history-item row">
+                      <div class="col-md-3">
+                        <div class="history-date" data-aos="fade-right">
+                          2013. 09
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="img-container card-motion">
+                          <div class="d-block-pc motion">
+                            <img src="../../assets/images/img_history7.jpg" alt="">
+                            <div class="img-holder">
+                              <div class="img-wrap">
+                                <div style="background-image:url('../../assets/images/img_history7.jpg');"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄, 임시 데이터를 입력합니다</p>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-
               </div>
-            </div>
-          </div>
+            </section>
+
+            <section class="full-screen" id="section-1">
+              <div class="history container">
+                <div class="row">
+                  <div class="col-md-8 container">
+                    <div class="history-item row">
+                      <div class="col-md-3">
+                        <div class="history-date" data-aos="fade-right">
+                          2020. 02
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="img-container card-motion">
+                          <div class="d-block-pc motion">
+                            <img src="../../assets/images/img_history1.jpg" alt="">
+                            <div class="img-holder">
+                              <div class="img-wrap">
+                                <div style="background-image:url('../../assets/images/img_history1.jpg');"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄, 임시 데이터를 입력합니다</p>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄, 임시 데이터를 입력합니다</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-offset-4 col-md-8 container">
+                    <div class="history-item row">
+                      <div class="col-md-3">
+                        <div class="history-date" data-aos="fade-right">
+                          2022. 03
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="img-container card-motion">
+                          <div class="d-block-pc motion">
+                            <img src="../../assets/images/img_history2.jpg" alt="">
+                            <div class="img-holder">
+                              <div class="img-wrap">
+                                <div style="background-image:url('../../assets/images/img_history2.jpg');"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄, 임시 데이터를 입력합니다</p>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-8 container">
+                    <div class="history-item row">
+                      <div class="col-md-3">
+                        <div class="history-date" data-aos="fade-right">
+                          2021. 12
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <!-- <div class="img-container card-motion">
+                              <div class="d-block-pc motion">
+                                <img src="../../assets/images/img_history1.jpg" alt="">
+                                <div class="img-holder">
+                                  <div class="img-wrap">
+                                    <div style="background-image:url('../../assets/images/img_history1.jpg');"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div> -->
+                        <p class="pitcture-desc" data-aos="fade-up">
+                          <strong>12월의 첫번째 행사</strong>
+                          12월의 첫번째 행사의 설명을 입력합니다. 임시데이터 입니다
+                        </p>
+                        <p class="pitcture-desc" data-aos="fade-up">
+                          <strong>12월의 첫번째 행사</strong>
+                          12월의 두번째 행사의 설명을 입력합니다. 임시데이터를 입력합니다!<br>두번째 행사는 성황리에 개최 되었습니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-offset-4 col-md-8 container">
+                    <div class="history-item row">
+                      <div class="col-md-3">
+                        <div class="history-date" data-aos="fade-right">
+                          2019. 12
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="img-container card-motion">
+                          <div class="d-block-pc motion">
+                            <img src="../../assets/images/img_history3.jpg" alt="">
+                            <div class="img-holder">
+                              <div class="img-wrap">
+                                <div style="background-image:url('../../assets/images/img_history3.jpg');"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄, 임시 데이터를 입력합니다</p>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-8 container">
+                    <div class="history-item row">
+                      <div class="col-md-3">
+                        <div class="history-date" data-aos="fade-right">
+                          2019. 08
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="img-container card-motion">
+                          <div class="d-block-pc motion">
+                            <img src="../../assets/images/img_history4.jpg" alt="">
+                            <div class="img-holder">
+                              <div class="img-wrap">
+                                <div style="background-image:url('../../assets/images/img_history4.jpg');"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄, 임시 데이터를 입력합니다</p>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-offset-4 col-md-8 container">
+                    <div class="history-item row">
+                      <div class="col-md-3">
+                        <div class="history-date" data-aos="fade-right">
+                          2017. 06
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="img-container card-motion">
+                          <div class="d-block-pc motion">
+                            <img src="../../assets/images/img_history5.jpg" alt="">
+                            <div class="img-holder">
+                              <div class="img-wrap">
+                                <div style="background-image:url('../../assets/images/img_history5.jpg');"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄, 임시 데이터를 입력합니다</p>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-8 container">
+                    <div class="history-item row">
+                      <div class="col-md-3">
+                        <div class="history-date" data-aos="fade-right">
+                          2015. 08
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="img-container card-motion">
+                          <div class="d-block-pc motion">
+                            <img src="../../assets/images/img_history6.jpg" alt="">
+                            <div class="img-holder">
+                              <div class="img-wrap">
+                                <div style="background-image:url('../../assets/images/img_history6.jpg');"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄, 임시 데이터를 입력합니다</p>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-offset-4 col-md-8 container">
+                    <div class="history-item row">
+                      <div class="col-md-3">
+                        <div class="history-date" data-aos="fade-right">
+                          2013. 09
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="img-container card-motion">
+                          <div class="d-block-pc motion">
+                            <img src="../../assets/images/img_history7.jpg" alt="">
+                            <div class="img-holder">
+                              <div class="img-wrap">
+                                <div style="background-image:url('../../assets/images/img_history7.jpg');"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄, 임시 데이터를 입력합니다</p>
+                        <p class="pitcture-desc" data-aos="fade-up">연도별 행사 타이틀은 최대 2줄</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="full-screen" id="section-2">
+
+            </section>
+
+            <section class="full-screen" id="section-3">
+
+            </section>
+            <section class="full-screen" id="section-4">
+
+            </section>
+          </main>
         </div>
       </div>
 
@@ -87,14 +545,25 @@
   <!-- 스크립트 호출 -->
   <script src="/assets/js/jquery-2.2.4.min.js"></script>
   <script src="/assets/js/jquery.bxslider.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="/assets/js/common.js"></script>
-  <script src="/assets/js/type1.js"></script>
+  <script src="/assets/js/history.js"></script>
   <script src="/assets/js/ScrollMagic.min.js"></script>
   <script src="/assets/js/animation.gsap.min.js"></script>
   <script src="/assets/js/debug.addIndicators.min.js"></script>
   <script src="/assets/js/TweenMax.min.js"></script>
   <script src="/assets/js/include.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollToPlugin.min.js"></script>
+  <script>
+    //aos init
+    AOS.init({
+      duration: 1000,
+      easing: 'ease',
+      offset: 200,
+      once: true
+    });
+  </script>
 </body>
 
 </html>

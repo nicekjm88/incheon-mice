@@ -1,11 +1,3 @@
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 500) {
-    $(".nav-area").addClass("sticky");
-  } else {
-    $(".nav-area").removeClass("sticky");
-  }
-});
-
 $(function () {
   // Controller 객체 설정
   var controller = new ScrollMagic.Controller();

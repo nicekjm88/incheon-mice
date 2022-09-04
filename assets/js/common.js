@@ -17,15 +17,18 @@ $(function () {
     $(this).parents("li").toggleClass("is-active");
     $(this).parent().next().slideToggle();
   });
-
 });
 
 $(window).resize(function () {
   if ($(window).width() < 767) {
-    $(".all-menu-list>li").eq(0).addClass('is-active');
+    $(".all-menu-list>li").eq(0).addClass("is-active");
     $(".all-menu-list>li>a").click(function () {
       $(this).attr("href", "javascript:void(0)");
-      $(this).parent().addClass("is-active").siblings().removeClass("is-active");
+      $(this)
+        .parent()
+        .addClass("is-active")
+        .siblings()
+        .removeClass("is-active");
     });
   }
 });
@@ -36,7 +39,8 @@ $(window).on("load", function () {
 
 //all check
 (function (global, document) {
-  "use strict";
+  return;
+  ("use strict");
 
   var checkAll = document.querySelector('[name="checkAll"]');
   var checkItem = document.querySelectorAll('[name="checkItem"]');
