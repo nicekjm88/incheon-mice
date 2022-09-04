@@ -112,3 +112,11 @@ $(function () {
     // })
     .addTo(controller);
 });
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 500) {
+    $(".history-navigation.vertical").fadeIn();
+  } else {
+    $(".history-navigation.vertical").fadeOut();
+  }
+});

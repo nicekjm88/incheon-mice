@@ -595,6 +595,7 @@ Create date :
   left: 100px;
   z-index: 99;
   margin: 0;
+  display: none;
 }
 
 .area-history .history-navigation.vertical .controller-item {
