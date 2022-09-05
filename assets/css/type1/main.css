@@ -59,6 +59,12 @@ Create date :
   mix-blend-mode: screen;
 }
 
+#contents .section1 .banner .overlay-text strong,
+#contents .section1 .banner .overlay-text em,
+#contents .section1 .banner .overlay-text span {
+  display: block;
+}
+
 #contents .section1 .banner .overlay-text strong {
   line-height: 1;
   opacity: 0;
@@ -167,10 +173,59 @@ Create date :
   z-index: 1;
 }
 
+#contents .section2 .picture {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+#contents .section2 .picture-title {
+  text-transform: uppercase;
+  font-size: 14rem;
+  color: #ececec;
+  font-weight: 900;
+  font-family: "S-CoreDream";
+  line-height: 1;
+  display: block;
+}
+
+#contents .section2 .picture-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 350px;
+  height: 350px;
+  margin-top: 100px;
+}
+
+#contents .section2 .picture-img .img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 130px;
+}
+
+#contents .section2 .picture-img .img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  #contents .section2 .picture {
+    display: none;
+  }
+}
+
 #contents .section2 .desc {
   opacity: 0;
-  padding-top: 370px;
-  background: url("../../images/bg_section2.jpg") 0 0 no-repeat;
   color: #000;
   font-size: 3rem;
   font-family: "IncheonMICE";
@@ -205,6 +260,12 @@ Create date :
   padding: 0 30px;
   text-align: left;
   background: url("../../images/bg_btn_arr.gif") 90% center no-repeat #f5f5f5;
+}
+
+@media (max-width: 767px) {
+  #contents .section2 .desc {
+    background: url("../../images/bg_section2.jpg") 0 0 no-repeat;
+  }
 }
 
 #contents .section2.fade-in .slogan > span {
@@ -345,7 +406,7 @@ Create date :
   }
   #contents .section1 .banner .overlay-text strong {
     font-size: 8rem;
-    letter-spacing: -.5rem;
+    letter-spacing: -0.5rem;
   }
   #contents .section1 .banner .overlay-text p {
     font-size: 2rem;

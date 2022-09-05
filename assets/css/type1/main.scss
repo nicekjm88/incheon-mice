@@ -6,7 +6,6 @@ Create date :
 @import "../mixin";
 
 #wrap {
-  
   #header {
     top: -116px;
   }
@@ -19,7 +18,6 @@ Create date :
 }
 
 #contents {
-
   .section1 {
     height: 100vh;
 
@@ -55,6 +53,12 @@ Create date :
         text-transform: uppercase;
         background-color: #ffffff;
         mix-blend-mode: screen;
+
+        strong,
+        em,
+        span {
+          display: block;
+        }
 
         strong {
           line-height: 1;
@@ -92,7 +96,7 @@ Create date :
             font-family: "IncheonMICE";
             display: block;
           }
-          
+
           br {
             display: none;
 
@@ -100,11 +104,7 @@ Create date :
               display: block;
             }
           }
-
-          
         }
-
-
       }
     }
 
@@ -174,10 +174,55 @@ Create date :
       }
     }
 
+    .picture {
+      position: relative;
+      margin-bottom: 80px;
+
+      &-title {
+        text-transform: uppercase;
+        font-size: 14rem;
+        color: #ececec;
+        font-weight: 900;
+        font-family: "S-CoreDream";
+        line-height: 1;
+        display: block;
+      }
+
+      &-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+        height: 350px;
+        margin-top: 100px;
+
+        .img {
+          position: relative;
+          width: 50px;
+          height: 50px;
+          margin: auto;
+          overflow: hidden;
+          border-radius: 130px;
+
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-left: 40px;
+            margin-top: 20px;
+          }
+        }
+      }
+
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+
     .desc {
       opacity: 0;
-      padding-top: 370px;
-      background: url("../../images/bg_section2.jpg") 0 0 no-repeat;
       color: #000;
       font-size: 3rem;
       font-family: "IncheonMICE";
@@ -213,6 +258,10 @@ Create date :
         background: url("../../images/bg_btn_arr.gif") 90% center no-repeat
           #f5f5f5;
       }
+
+      @media (max-width: 767px) {
+        background: url("../../images/bg_section2.jpg") 0 0 no-repeat;
+      }
     }
 
     &.fade-in {
@@ -220,22 +269,6 @@ Create date :
         > span {
           opacity: 1;
           left: 30px;
-
-          &:nth-child(1) {
-
-          }
-
-          &:nth-child(2) {
-
-          }
-
-          &:nth-child(3) {
-
-          }
-
-          &:nth-child(4) {
- 
-          }
         }
       }
 
@@ -245,19 +278,16 @@ Create date :
         &-title {
           opacity: 1;
           bottom: 0;
-
         }
 
         p {
           opacity: 1;
           bottom: 0;
-
         }
 
         &-btn {
           opacity: 1;
           bottom: 0;
-
         }
       }
     }
@@ -267,7 +297,6 @@ Create date :
     padding-top: 180px;
 
     .slogan {
-
       position: relative;
       left: -30px;
       opacity: 0;
@@ -314,7 +343,6 @@ Create date :
     }
 
     .contact-us {
-
       position: relative;
       bottom: -30px;
       opacity: 0;
@@ -339,13 +367,11 @@ Create date :
       }
 
       .contact-us {
-
         opacity: 1;
         bottom: 0;
       }
     }
   }
-
 }
 
 @keyframes rotating {
@@ -379,7 +405,7 @@ Create date :
   }
   #contents .section1 .banner .overlay-text strong {
     font-size: 8rem;
-    letter-spacing: -.5rem;
+    letter-spacing: -0.5rem;
   }
   #contents .section1 .banner .overlay-text p {
     font-size: 2rem;
@@ -407,7 +433,6 @@ Create date :
   }
   #contents .section2 .desc-title {
     font-size: 2.5rem;
-    
   }
   #contents .section2 .desc {
     font-size: 2rem;
@@ -428,13 +453,13 @@ Create date :
 
   #contents .section3 .slogan {
     font-size: 3.8rem;
-    text-align: center;    
+    text-align: center;
   }
   #contents .section3 .btn-download {
     position: absolute;
     top: 190px;
     right: 0px;
-    transform: scale(.75);
+    transform: scale(0.75);
   }
   #contents .section3 .contact-us {
     font-size: 2rem;

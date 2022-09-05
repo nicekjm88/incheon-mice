@@ -35,14 +35,18 @@ $(function () {
   });
 
   //텍스트 애니메이션
-  var tween2 = TweenMax.to(".type-animate", 1, { css: { opacity: "1" } });
-  var scene = new ScrollMagic.Scene({ offset: 200, duration: 500 })
+  var tween2 = TweenMax.to(".picture-img .img", 1, {
+    css: {
+      borderRadius: "250px",
+      height: "350px",
+      width: "350px",
+    },
+  });
+  var scene2 = new ScrollMagic.Scene({
+    offset: 300,
+    duration: 500,
+  })
+    // .addIndicators()
     .setTween(tween2)
-    .addTo(controller);
-
-  //해당 학부 상징물
-  var tween3 = TweenMax.to(".object", 1, { css: { opacity: "1" } });
-  var scene = new ScrollMagic.Scene({ offset: 550, duration: 600 })
-    .setTween(tween3)
     .addTo(controller);
 });
