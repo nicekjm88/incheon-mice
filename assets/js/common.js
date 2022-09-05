@@ -17,6 +17,15 @@ $(function () {
     $(this).parents("li").toggleClass("is-active");
     $(this).parent().next().slideToggle();
   });
+
+  //문의
+  $(".quick ul").on("mouseenter", function () {
+    $(this).addClass("is-active");
+  });
+
+  $(".quick ul").on("mouseleave", function () {
+    $(this).removeClass("is-active");
+  });
 });
 
 $(window).resize(function () {
@@ -39,7 +48,6 @@ $(window).on("load", function () {
 
 //all check
 (function (global, document) {
-  return;
   ("use strict");
 
   var checkAll = document.querySelector('[name="checkAll"]');

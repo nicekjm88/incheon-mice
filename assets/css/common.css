@@ -234,6 +234,25 @@ textarea {
   font-weight: inherit;
   margin: 0;
 }
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: "NotoSansKR", sans-serif;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* 스크롤바 */
+div {
+  scrollbar-width: thin;
+}
+div::-webkit-scrollbar {
+  width: 5px;
+}
+div::-webkit-scrollbar-thumb {
+  background: #d0d0d0;
+  border-radius: 3px;
+}
 
 /* font-size */
 .fs12 {
@@ -424,6 +443,15 @@ textarea.form-control {
   padding-right: 18px;
 }
 
+.btn.btn-xsmall {
+  height: 50px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #555;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
 .btn.btn-xs {
   width: 75px;
 }
@@ -441,6 +469,9 @@ textarea.form-control {
 }
 .btn.btn-xxl {
   width: 230px;
+}
+.btn.btn-xxxl {
+  width: 668px;
 }
 .btn.btn-normal {
   width: auto;
@@ -655,6 +686,18 @@ button.close {
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
+
+.modal.type2 .modal-dialog {
+  width: 1330px;
+}
+.modal.type2 .modal-title {
+  padding-bottom: 0;
+}
+.modal.type2 .pre-wrap {
+  height: 500px;
+  overflow: auto;
+}
+
 .modal.fade .modal-dialog {
   transform: translate(0, -50%);
   -webkit-transition: -webkit-transform 0.3s ease-out;

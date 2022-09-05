@@ -491,10 +491,10 @@ Create date :
 .area-mypage {
   padding-top: 70px;
 
-  .contents-title {
-    border-bottom: 1px solid #e6eeef;
-    padding-bottom: 120px;
-  }
+  // .contents-title {
+  //   border-bottom: 1px solid #e6eeef;
+  //   padding-bottom: 120px;
+  // }
 
   .card {
     .btn-white {
@@ -551,27 +551,45 @@ Create date :
   }
 }
 
+.horizontal-line {
+  display: block;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background-color: #e6eeef;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
 /* WHY인천 > 성공사례 */
 .area-history {
   padding-top: 70px;
 
-  .horizontal-line {
-    display: block;
-    padding-bottom: 80px;
-    margin-bottom: 80px;
-    position: relative;
+  // .horizontal-line {
+  //   display: block;
+  //   padding-bottom: 80px;
+  //   margin-bottom: 80px;
+  //   position: relative;
 
-    &::after {
-      content: "";
-      width: 100vw;
-      height: 1px;
-      background-color: #e6eeef;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%, 0);
-    }
-  }
+  //   &::after {
+  //     content: "";
+  //     width: 100vw;
+  //     height: 1px;
+  //     background-color: #e6eeef;
+  //     position: absolute;
+  //     bottom: 0;
+  //     left: 50%;
+  //     transform: translate(-50%, 0);
+  //   }
+  // }
 
   .main-ment {
     font-size: 4rem;
@@ -795,6 +813,128 @@ Create date :
       &.type3 {
         top: 343vw;
       }
+    }
+  }
+}
+
+/* 지원서 신청 */
+.area-submission {
+  padding-top: 70px;
+
+  .card {
+    padding: 30px 78px;
+
+    label {
+      font-weight: 700;
+      color: #000;
+    }
+  }
+}
+
+.flex-box {
+  display: flex;
+
+  &.jcsb {
+    justify-content: space-between;
+  }
+
+  &.aic {
+    align-items: center;
+  }
+}
+
+/* 퀵링크 */
+.quick {
+  position: fixed;
+  right: 60px;
+  bottom: 130px;
+  z-index: 1;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    width: 86px;
+    height: 86px;
+    bottom: 0;
+    right: 0;
+    border-radius: 50px;
+    padding-top: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: width 0.45s ease;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
+
+    > li {
+      padding-left: 0;
+      opacity: 0;
+      text-align: center;
+      margin-bottom: 19px;
+      -webkit-transition: visibility 0.7s ease, opacity 0.7s ease;
+      transition: visibility 0.7s ease, opacity 0.7s ease;
+      float: left;
+      width: 86px;
+      height: 86px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      > a {
+        display: inline-block;
+        transition: opacity 0.45s ease;
+
+        > span {
+          display: inline-block;
+          width: 100%;
+          height: 1.6rem;
+          font-size: 12px;
+          color: #555;
+          overflow: hidden;
+          margin-top: 5px;
+        }
+      }
+
+      &.exp-button {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .lg-txt {
+        color: #666;
+        font-size: 1.6rem;
+
+        strong {
+          display: block;
+          font-size: 2.2rem;
+          color: #000;
+        }
+      }
+    }
+
+    &.is-active {
+      width: 250px;
+      cursor: default;
+
+      > li {
+        visibility: visible;
+        opacity: 1;
+
+        > a > span {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .icon {
+    display: block;
+    width: 26px;
+    height: 26px;
+
+    &-question {
+      background: url("/assets/images/i_question.gif") no-repeat;
     }
   }
 }
