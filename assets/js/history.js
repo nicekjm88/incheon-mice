@@ -109,7 +109,7 @@ $(function () {
     .addTo(controller);
 
   var tween3 = TweenMax.to(".bg-txt.type2", 1, {
-    transform: "translate3d(-200px,0,0)",
+    transform: "translate3d(-100px,0,0)",
     XPercent: -100,
   });
   var scene7 = new ScrollMagic.Scene({
@@ -123,7 +123,7 @@ $(function () {
     .addTo(controller);
 
   var tween4 = TweenMax.to(".bg-txt.type3", 1, {
-    transform: "translate3d(-200px,0,0)",
+    transform: "translate3d(-100px,0,0)",
     XPercent: -100,
   });
   var scene8 = new ScrollMagic.Scene({
