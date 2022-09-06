@@ -27,14 +27,34 @@
       <div class="wrap-container">
         <div class="area-history">
           <!-- breadcrumb -->
-          <nav aria-label="breadcrumb">
+          <!-- <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="/html/index.html"> <i class="xi-home"></i> <span
                     class="hidden">Home</span></a></li>
               <li class="breadcrumb-item" aria-current="page">WHY인천</li>
               <li class="breadcrumb-item active" aria-current="page">성공사례</li>
             </ol>
-          </nav>
+          </nav> -->
+
+          <div class="breadcrumb-add-nav flex-box jcsb aic">
+            <!-- breadcrumb -->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/html/index.html"> <i class="xi-home"></i> <span
+                      class="hidden">Home</span></a></li>
+                <li class="breadcrumb-item" aria-current="page">WHY인천</li>
+                <li class="breadcrumb-item active" aria-current="page">성공사례</li>
+              </ol>
+            </nav>
+
+            <nav>
+              <ul class="snb">
+                <li><a href="#">Top Reasons</a></li>
+                <li class="is-active"><a href="#">성공사례</a></li>
+                <li><a href="#">제안신청</a></li>
+              </ul>
+            </nav>
+          </div>
 
           <h1 class="contents-title txt-center">
             <span data-aos="fade-up" data-aos-delay="0">인천에서 성공적으로 마친</span>
@@ -368,7 +388,7 @@
     AOS.init({
       duration: 1000,
       easing: 'ease',
-      offset: 200,
+      offset: 100,
       once: true
     });
   </script>

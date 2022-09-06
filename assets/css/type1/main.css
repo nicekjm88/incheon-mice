@@ -57,6 +57,7 @@ Create date :
   text-transform: uppercase;
   background-color: #ffffff;
   mix-blend-mode: screen;
+  margin-top: 50px;
 }
 
 #contents .section1 .banner .overlay-text strong,

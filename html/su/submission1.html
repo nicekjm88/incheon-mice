@@ -25,45 +25,48 @@
     <div id="contents">
       <div class="wrap-container">
         <div class="container">
-          <div class="area-submission row">
-            <div class="col-md-12">
-              <div>
+          <div class="area-submission">
+            <div class="breadcrumb-add-nav flex-box jcsb aic">
+              <!-- breadcrumb -->
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="/html/index.html"> <i class="xi-home"></i> <span
+                        class="hidden">Home</span></a></li>
+                  <li class="breadcrumb-item" aria-current="page">MICE지원</li>
+                  <li class="breadcrumb-item active" aria-current="page">지원신청</li>
+                </ol>
+              </nav>
 
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <!-- breadcrumb -->
-                      <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="/html/index.html"> <i class="xi-home"></i> <span
-                                class="hidden">Home</span></a></li>
-                          <li class="breadcrumb-item" aria-current="page">MICE지원</li>
-                          <li class="breadcrumb-item active" aria-current="page">지원신청</li>
-                        </ol>
-                      </nav>
-                    </div>
-                    <div class="col-md-8">
-                      <nav>
-                        <ul>
-                          <li><a href="#">국내/국제회의</a></li>
-                          <li><a href="#">기업회의/인센티브</a></li>
-                          <li><a href="#">지원신청</a></li>
-                          <li><a href="#">FAQ</a></li>
-                        </ul>
-                      </nav>
-                    </div>
-                  </div>
-                </div>
+              <nav>
+                <ul class="snb">
+                  <li><a href="#">국내/국제회의</a></li>
+                  <li><a href="#">기업회의/인센티브</a></li>
+                  <li class="is-active"><a href="#">지원신청</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+              </nav>
+            </div>
 
-                <h1 class="contents-title txt-center">
-                  <span>인천MICE뷰로의</span>
-                  <strong>다양한 지원을 받아보세요</strong>
-                </h1>
+            <h1 class="contents-title txt-center">
+              <span>인천MICE뷰로의</span>
+              <strong>다양한 지원을 받아보세요</strong>
+            </h1>
 
-                <div class="horizontal-line"></div>
+            <div class="horizontal-line"></div>
 
-                신청서작성 지원신청관리
-                행사의 전 분야에 걸친 유치, 홍보, 개최 관련 지원 서비스 제공합니다.
+            <div class="tab-container">
+              <ul class="tab-list" role="tablist" aria-label="a11y Tabs">
+                <li id="tab-button-1" class="tab-button" role="tab" aria-controls="tab-panel-1">
+                  신청서작성
+                </li>
+                <li id="tab-button-2" class="tab-button" role="tab" aria-controls="tab-panel-2">
+                  지원신청관리
+                </li>                
+              </ul>
+              <div id="tab-panel-1" class="tab-panel" role="tabpanel" aria-labelledby="tab-button-1">
+                <p class="tabs-desc">
+                  행사의 전 분야에 걸친 유치, 홍보, 개최 관련 지원 서비스 제공합니다.
+                </p>                
 
                 <div class="card">
                   <div class="flex-box jcsb aic">
@@ -81,40 +84,46 @@
 
                 <div class="card">
                   <div class="flex-box jcsb aic">
-                    <div>
-                      지원분야 *
+                    <div class="card-title first">
+                      지원분야 <span class="color-secondary">*</span>
                     </div>
                     <div>
-                      * 항목은 필수입니다.
+                      <span class="color-secondary">*</span> 항목은 <span class="color-secondary">필수</span>입니다.
                     </div>
                   </div>
 
-                  <div class="conatiner">
-                    <div class="row">
+                  <div class="container">
+                    <div class="row select-group">
                       <div class="col-md-6">
-                        <select class="form-control" name="" id="">
-                          <option value="">분야구분</option>
-                        </select>
+                        <div class="select">
+                          <select class="form-control" name="" id="">
+                            <option value="">분야구분</option>
+                          </select>
+                        </div>
                       </div>
                       <div class="col-md-6">
-                        <select class="form-control" name="" id="">
-                          <option value="">지원구분</option>
-                        </select>
+                        <div class="select">
+                          <select class="form-control last" name="" id="">
+                            <option value="">지원구분</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <ul>
+                  <ul class="list">
                     <li><strong>국내회의/국제회의</strong> : 학&middot;협회, 국제기구, 국제기구에 가입한 기관 등에서 개최하는 회의</li>
                     <li><strong>기업회의</strong> : 기업에서 개최하는 회의</li>
                   </ul>
                 </div>
 
-                <div class="txt-center btn-submit">
+                <div class="txt-center btn-submit2">
                   <button type="button" class="btn btn-primary btn-xxxl">지원서 작성하기</button>
                 </div>
-
               </div>
+              <div id="tab-panel-2" class="tab-panel" role="tabpanel" aria-labelledby="tab-button-2">
+                
+              </div>        
             </div>
           </div>
         </div>

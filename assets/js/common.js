@@ -22,11 +22,131 @@ $(function () {
   $(".quick ul").on("mouseenter", function () {
     $(this).addClass("is-active");
   });
-
   $(".quick ul").on("mouseleave", function () {
     $(this).removeClass("is-active");
   });
 });
+
+//tabs
+(function (doc, $) {
+  var tabContainer = doc.querySelector('.tab-container');
+  if (!tabContainer) return;
+
+  $(tabContainer).on('click', '.tab-button', handleClickEvent);
+  $(tabContainer).on('keydown', '.tab-list', handleKeyEvent);
+
+  function handleClickEvent(event) {
+    event = event || window.event;
+    event.stopPropagation();
+    var currTab = event.currentTarget;
+
+    activeTab(currTab);
+    activeTabPanel(currTab);
+  }
+
+  function activeTab(tab) {
+    if (!tab) return;
+
+    $(tab)
+      .addClass('tab-button--active')
+      .attr({
+        'tabindex': '0',
+        'aria-selected': 'true'
+      })
+      .focus()
+      .siblings()
+      .removeClass('tab-button--active')
+      .attr({
+        'tabindex': '-1',
+        'aria-selected': 'false'
+      })
+  }
+
+  function activeTabPanel(tab) {
+    if (!tab) return;
+    $('#' + tab.getAttribute('aria-controls'))
+      .attr({
+        'tabindex': '0'
+      })
+      .prop({
+        'hidden': false
+      })
+      .addClass('tab-panel--active')
+      .siblings('.tab-panel')
+      .attr({
+        'tabindex': '-1'
+      })
+      .prop({
+        'hidden': true
+      })
+      .removeClass('tab-panel--active')
+  }
+
+  function handleKeyEvent(event) {
+    event = event || window.event;
+    event.stopPropagation();
+    var keycode = event.keyCode || event.which;
+
+    switch (keycode) {
+      case 37: //왼쪽 키보드
+        if (event.target.previousElementSibling) {
+          $(event.target)
+            .attr({
+              'tabindex': '-1'
+            })
+            .prev()
+            .attr({
+              'tabindex': '0'
+            })
+            .focus()
+        } else {
+          $(event.target)
+            .attr({
+              'tabindex': '-1'
+            })
+            .siblings(':last')
+            .attr({
+              'tabindex': '0'
+            })
+            .focus()
+        }
+        break;
+
+      case 39: //오른쪽 키보드
+        if (event.target.nextElementSibling) {
+          $(event.target)
+            .attr({
+              'tabindex': '-1'
+            })
+            .next()
+            .attr({
+              'tabindex': '0'
+            })
+            .focus()
+        } else {
+          $(event.target)
+            .attr({
+              'tabindex': '-1'
+            })
+            .siblings(':first')
+            .attr({
+              'tabindex': '0'
+            })
+            .focus()
+        }
+        break;
+      case 32: //스페이스 키
+      case 13: //엔터 키
+        event.preventDefault();
+        activeTab(event.target);
+        activeTabPanel(event.target);
+        break;
+    }
+  }
+
+
+  $('.tab-button:first-of-type', tabContainer).trigger('click');
+})(document, jQuery);
 
 $(window).resize(function () {
   if ($(window).width() < 767) {
@@ -45,47 +165,3 @@ $(window).resize(function () {
 $(window).on("load", function () {
   $(window).trigger("resize");
 });
-
-//all check
-(function (global, document) {
-  ("use strict");
-
-  var checkAll = document.querySelector('[name="checkAll"]');
-  var checkItem = document.querySelectorAll('[name="checkItem"]');
-
-  checkAll.setAttribute("id", "check-all");
-  checkAll.nextElementSibling.setAttribute("for", "check-all");
-
-  Array.prototype.forEach.call(checkItem, function (item, index) {
-    item.setAttribute("id", "agree" + Number(index + 1));
-    item.nextElementSibling.setAttribute("for", "agree" + Number(index + 1));
-
-    item.addEventListener("click", function (event) {
-      var checkedSum = 0;
-
-      for (var i = 0; i < checkItem.length; i++) {
-        if (checkItem[i].checked) {
-          checkedSum += 1;
-        }
-      }
-
-      if (checkedSum === checkItem.length) {
-        checkAll.checked = true;
-      } else {
-        checkAll.checked = false;
-      }
-    });
-  });
-
-  checkAll.addEventListener("click", function () {
-    if (this.checked) {
-      Array.prototype.forEach.call(checkItem, function (item, index) {
-        item.checked = true;
-      });
-    } else {
-      Array.prototype.forEach.call(checkItem, function (item, index) {
-        item.checked = false;
-      });
-    }
-  });
-})(window, window.document);
