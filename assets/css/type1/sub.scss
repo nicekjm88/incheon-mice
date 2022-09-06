@@ -162,7 +162,7 @@ Create date :
         position: relative;
 
         &::after {
-          content: '';
+          content: "";
           width: 100%;
           height: 3px;
           background-color: #065863;
@@ -233,10 +233,10 @@ Create date :
 
     select.form-control {
       border-radius: 0;
-      -moz-appearance:none; /* Firefox */
-      -webkit-appearance:none; /* Safari and Chrome */
-      appearance:none;    
-  
+      -moz-appearance: none; /* Firefox */
+      -webkit-appearance: none; /* Safari and Chrome */
+      appearance: none;
+
       &.last {
         border-left: none;
       }
@@ -245,7 +245,7 @@ Create date :
     &::after {
       color: #7f7f7f;
       content: "\e943";
-      font-family: 'xeicon';
+      font-family: "xeicon";
       position: absolute;
       top: 20px;
       right: 20px;
@@ -253,6 +253,10 @@ Create date :
   }
 
   & + .card {
+    margin-top: 60px;
+  }
+
+  .list + .card-title {
     margin-top: 60px;
   }
 }
@@ -402,6 +406,138 @@ Create date :
       strong {
         color: #006064;
         font-weight: 700;
+      }
+    }
+  }
+
+  &.type2 {
+    padding: 0 0 80px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    > li {
+      width: 150px;
+      padding-left: 0;
+      padding-top: 130px;
+      height: inherit;
+      background: url("../../images/bg_process11.gif") center top no-repeat;
+      position: relative;
+
+      &:nth-child(2) {
+        background-image: url("../../images/bg_process12.gif");
+
+        &::before {
+          content: "검토";
+        }
+      }
+      &:nth-child(3) {
+        background-image: url("../../images/bg_process13.gif");
+
+        &::before {
+          content: "행사진행";
+          right: -110px;
+        }
+      }
+      &:nth-child(4) {
+        background-image: url("../../images/bg_process14.gif");
+
+        &::before {
+          content: "검토";
+        }
+      }
+      &:nth-child(5) {
+        background-image: url("../../images/bg_process15.gif");
+
+        &::before,
+        &::after {
+          display: none;
+        }
+      }
+
+      &.is-active {
+        background-image: url("../../images/bg_process11_ov.gif");
+
+        &:nth-child(2) {
+          background-image: url("../../images/bg_process12_ov.gif");
+        }
+        &:nth-child(3) {
+          background-image: url("../../images/bg_process13_ov.gif");
+        }
+        &:nth-child(4) {
+          background-image: url("../../images/bg_process14_ov.gif");
+        }
+        &:nth-child(5) {
+          background-image: url("../../images/bg_process15_ov.gif");
+        }
+
+        &::before {
+          background-color: #006064;
+          border-color: #006064;
+          color: #fff;
+        }
+
+        &::after {
+          background-color: #006064;
+        }
+      }
+
+      &::before {
+        content: "제출";
+        position: absolute;
+        padding-left: 10px;
+        padding-right: 10px;
+        top: 40px;
+        right: -90px;
+        min-width: 49px;
+        height: 30px;
+        background-color: #fff;
+        border: 1px solid #d4d4d4;
+        font-size: 1.6rem;
+        line-height: 1.8;
+        border-radius: 20px;
+        z-index: 1;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 55px;
+        right: -160px;
+        width: 180px;
+        height: 1px;
+        background-color: #d4d4d4;
+        z-index: -1;
+      }
+    }
+  }
+
+  &.type3 {
+    > li {
+      background: url("../../images/bg_process21.gif") 0 0 no-repeat;
+
+      &:nth-child(2) {
+        background-image: url("../../images/bg_process22.gif");
+      }
+      &:nth-child(3) {
+        background-image: url("../../images/bg_process23.gif");
+      }
+      &:nth-child(4) {
+        background-image: url("../../images/bg_process24.gif");
+      }
+
+      &.is-active {
+        background-image: url("../../images/bg_process21_ov.gif");
+
+        &:nth-child(2) {
+          background-image: url("../../images/bg_process22_ov.gif");
+        }
+        &:nth-child(3) {
+          background-image: url("../../images/bg_process23_ov.gif");
+        }
+        &:nth-child(4) {
+          background-image: url("../../images/bg_process24_ov.gif");
+        }
       }
     }
   }
@@ -601,6 +737,11 @@ Create date :
       margin-bottom: 20px;
       line-height: 1.6;
 
+      label {
+        font-weight: 400 !important;
+        color: #555 !important;
+      }
+
       &:last-child {
         margin-bottom: 0;
       }
@@ -615,6 +756,20 @@ Create date :
         margin-bottom: 10px;
       }
     }
+
+    &.narrow {
+      > li {
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &.add-border {
+    border: 1px solid #e6eeef;
   }
 }
 
@@ -1007,21 +1162,20 @@ Create date :
   }
 }
 
-
 /* 공통 리스트 스타일 */
 .list {
   margin-top: 30px;
 
- > li {
-  & + li {
-    margin-top: 5px;
-  }
-  strong {
+  > li {
+    & + li {
+      margin-top: 5px;
+    }
+    strong {
+      color: #555;
+    }
+    font-size: 1.8rem;
     color: #555;
   }
-  font-size: 1.8rem;
-  color: #555;
- }
 }
 
 /* tabs */
@@ -1039,7 +1193,7 @@ Create date :
       position: relative;
 
       &::after {
-        content: '';
+        content: "";
         width: 0;
         height: 3px;
         background-color: #065863;
@@ -1048,7 +1202,7 @@ Create date :
         left: 50%;
         // transition: all .3s ease;
       }
-      
+
       & + .tab-button {
         margin-left: 30px;
       }
@@ -1077,18 +1231,13 @@ Create date :
   color: #666;
   margin-left: 5px;
 }
-/**
- * Tooltip Styles
- */
 
-/* Add this attribute to the element that needs a tooltip */
 [data-tooltip] {
   position: relative;
   z-index: 2;
   cursor: pointer;
 }
 
-/* Hide the tooltip content by default */
 [data-tooltip]:before,
 [data-tooltip]:after {
   visibility: hidden;
@@ -1096,48 +1245,80 @@ Create date :
   pointer-events: none;
 }
 
-/* Position tooltip above the element */
 [data-tooltip]:before {
   position: absolute;
   bottom: 30px;
   left: 50%;
   margin-bottom: 5px;
-  margin-left: -80px;
+  margin-left: -230px;
   padding: 7px;
-  width: 160px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
+  width: 530px;
   border-radius: 3px;
-  background-color: #000;
-  background-color: hsla(0, 0%, 20%, 0.9);
-  color: #fff;
+  background-color: #fff;
+  border: 1px solid #006064;
+  color: #006064;
   content: attr(data-tooltip);
   text-align: center;
-  font-size: 14px;
-  line-height: 1.2;
+  font-size: 1.6rem;
+  letter-spacing: -0.05em;
 }
 
-/* Triangle hack to make tooltip look like a speech bubble */
 [data-tooltip]:after {
   position: absolute;
-  bottom: 30px;
+  bottom: 32px;
   left: 50%;
   margin-left: -5px;
-  width: 0;
-  border-top: 5px solid #000;
-  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-  content: " ";
-  font-size: 0;
-  line-height: 0;
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #006064;
+  border-right: 1px solid #006064;
+  content: "";
+  background-color: #fff;
+  transform: rotate(135deg);
 }
 
-/* Show tooltip content on hover */
 [data-tooltip]:hover:before,
 [data-tooltip]:hover:after {
   visibility: visible;
   opacity: 1;
+}
+
+/* su > form-group */
+.form-wrap {
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+
+  .form-group {
+    // label {
+    //   position: absolute;
+    //   width: 1px;
+    //   height: 1px;
+    //   padding: 0;
+    //   margin: -1px;
+    //   overflow: hidden;
+    //   clip: rect(0, 0, 0, 0);
+    //   border: 0;
+    // }
+
+    // &.after {
+    //   label {
+    //     width: inherit;
+    //     height: inherit;
+    //     margin: 0;
+    //     overflow: visible;
+    //     clip: inherit;
+    //     top: 20px;
+    //     left: 22px;
+    //   }
+    // }
+  }
+
+  .form-control {
+    border: none;
+    border-radius: 0;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -1202,22 +1383,24 @@ Create date :
   .all-check {
     margin-top: 40px;
   }
+
   .join-process {
     padding-top: 40px;
-  }
-  .join-process > li {
-    padding-left: 0;
-    font-size: 1.3rem;
-    height: inherit;
-    padding-top: 70px;
-    background-size: 60px;
-    background-position: top center;
-    text-align: center;
-    letter-spacing: -0.05em;
-  }
 
-  .join-process > li strong {
-    font-size: 1.4rem;
+    > li {
+      padding-left: 0;
+      font-size: 1.3rem;
+      height: inherit;
+      padding-top: 70px;
+      background-size: 60px;
+      background-position: top center;
+      text-align: center;
+      letter-spacing: -0.05em;
+
+      strong {
+        font-size: 1.4rem;
+      }
+    }
   }
 
   .accordion > li .card {
