@@ -100,6 +100,15 @@ Create date :
 }
 
 .breadcrumb-add-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 70px;
 }
 
@@ -1303,7 +1312,7 @@ Create date :
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1025px) {
   .area-mypage,
   .area-join,
   .area-reset {
@@ -1444,6 +1453,51 @@ Create date :
   .card .card-bottom-btn .btn.btn-sm {
     width: 100%;
     margin-top: 40px;
+  }
+  .breadcrumb-add-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .breadcrumb-add-nav > nav {
+    margin-bottom: 30px;
+  }
+  .breadcrumb-add-nav .snb > li:first-child {
+    margin-left: 0;
+  }
+  .area-history .horizontal-line {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+  .area-history .main-ment {
+    font-size: 3rem;
+    margin-bottom: 60px;
+  }
+  .area-history .history-navigation {
+    display: none;
+  }
+  .area-history .history-navigation.vertical {
+    display: none !important;
+  }
+  .area-history .history-date {
+    -webkit-writing-mode: initial;
+        -ms-writing-mode: initial;
+            writing-mode: initial;
+    font-size: 7.5rem;
+    margin-bottom: 10px;
+  }
+  .area-history .history-item {
+    padding-bottom: 100px;
+  }
+  .area-history .history .bg-txt {
+    display: none;
+  }
+  .area-history .history .card-motion {
+    margin-bottom: 25px;
   }
 }
 /*# sourceMappingURL=sub.css.map */

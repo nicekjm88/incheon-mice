@@ -100,6 +100,9 @@ Create date :
 }
 
 .breadcrumb-add-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 70px;
 
   .breadcrumb {
@@ -1327,7 +1330,7 @@ Create date :
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1025px) {
   .area-mypage,
   .area-join,
   .area-reset {
@@ -1472,5 +1475,62 @@ Create date :
   .card .card-bottom-btn .btn.btn-sm {
     width: 100%;
     margin-top: 40px;
+  }
+
+  .breadcrumb-add-nav {
+    flex-direction: column;
+    align-items: flex-start;
+
+    > nav {
+      margin-bottom: 30px;
+    }
+
+    .snb {
+      > li:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .area-history {
+    .horizontal-line {
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+    }
+    .main-ment {
+      font-size: 3rem;
+      margin-bottom: 60px;
+    }
+
+    .history {
+      &-navigation {
+        display: none;
+  
+        &.vertical {
+          display: none !important;
+          // top: 0;
+          // left: 0;
+          // transform: translateY(0);
+          // width: 100%;
+          // background-color: #fff;
+        }
+      }
+      &-date {
+        writing-mode: initial;
+        font-size: 7.5rem;
+        margin-bottom: 10px;
+      }
+      &-item {
+        padding-bottom: 100px;
+      }
+
+      .bg-txt {
+        display: none;
+      }
+
+      .card-motion {
+        margin-bottom: 25px;
+      }
+    }
   }
 }
