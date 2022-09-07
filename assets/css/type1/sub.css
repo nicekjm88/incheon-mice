@@ -1406,9 +1406,6 @@ Create date :
     word-break: keep-all;
     line-height: 1.4;
   }
-  .area-mypage .contents-title {
-    padding-bottom: 60px;
-  }
   .contents-title2 {
     margin-top: 0;
   }
@@ -1469,7 +1466,7 @@ Create date :
   .breadcrumb-add-nav .snb > li:first-child {
     margin-left: 0;
   }
-  .area-history .horizontal-line {
+  .horizontal-line {
     padding-bottom: 40px;
     margin-bottom: 40px;
   }

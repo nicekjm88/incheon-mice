@@ -1428,9 +1428,6 @@ Create date :
     word-break: keep-all;
     line-height: 1.4;
   }
-  .area-mypage .contents-title {
-    padding-bottom: 60px;
-  }
   .contents-title2 {
     margin-top: 0;
   }
@@ -1492,11 +1489,12 @@ Create date :
     }
   }
 
+  .horizontal-line {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+
   .area-history {
-    .horizontal-line {
-      padding-bottom: 40px;
-      margin-bottom: 40px;
-    }
     .main-ment {
       font-size: 3rem;
       margin-bottom: 60px;
