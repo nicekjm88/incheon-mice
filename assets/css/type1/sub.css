@@ -239,32 +239,6 @@ Create date :
   right: 0;
 }
 
-.card .select {
-  position: relative;
-}
-
-.card .select select.form-control {
-  border-radius: 0;
-  -moz-appearance: none;
-  /* Firefox */
-  -webkit-appearance: none;
-  /* Safari and Chrome */
-  appearance: none;
-}
-
-.card .select select.form-control.last {
-  border-left: none;
-}
-
-.card .select::after {
-  color: #7f7f7f;
-  content: "\e943";
-  font-family: "xeicon";
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
 .card + .card {
   margin-top: 60px;
 }
@@ -281,6 +255,33 @@ Create date :
 .card-top .contents-title2 {
   margin-bottom: 0;
   margin-top: 10px;
+}
+
+/* custom select */
+.select {
+  position: relative;
+}
+
+.select select.form-control {
+  border-radius: 0;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+}
+
+.select select.form-control.last {
+  border-left: none;
+}
+
+.select::after {
+  color: #7f7f7f;
+  content: "\e943";
+  font-family: "xeicon";
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 /* 아코디언 카드스타일 */
@@ -731,6 +732,14 @@ Create date :
   margin-bottom: 40px;
 }
 
+.box-title {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 30px;
+  display: block;
+  font-weight: 700;
+}
+
 .box.box-gray {
   background-color: #f8f8f8;
 }
@@ -1048,7 +1057,7 @@ Create date :
   padding: 30px 78px;
 }
 
-.area-submission .card.type2 label {
+.area-submission .card.type2 label.strong {
   font-weight: 700;
   color: #000;
 }
@@ -1069,6 +1078,10 @@ Create date :
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.flex-box label {
+  font-weight: 400;
 }
 
 /* 퀵링크 */
@@ -1306,6 +1319,16 @@ Create date :
   border-top: 1px solid #ddd;
 }
 
+.form-group.form-group-inline {
+  display: inline-block;
+}
+
+.checkTrigger1,
+.checkTrigger2 {
+  display: none;
+}
+
+/**********************************************************/
 @media (max-width: 1280px) {
   .wrap-container {
     padding: 80px 15px 0;
