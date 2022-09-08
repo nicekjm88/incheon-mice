@@ -517,8 +517,12 @@ Create date :
   }
 
   &.type3 {
+    overflow: hidden;
+
     > li {
-      background: url("../../images/bg_process21.gif") 0 0 no-repeat;
+      width: 25%;
+      float: left;
+      background-image: url("../../images/bg_process21.gif");
 
       &:nth-child(2) {
         background-image: url("../../images/bg_process22.gif");
@@ -1087,7 +1091,6 @@ Create date :
   right: 60px;
   bottom: 130px;
   z-index: 1;
-  background-color: #fff;
 
   ul {
     margin: 0;
@@ -1104,6 +1107,7 @@ Create date :
     cursor: pointer;
     transition: width 0.45s ease;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
 
     > li {
       padding-left: 0;
@@ -1322,7 +1326,7 @@ Create date :
     //     height: inherit;
     //     margin: 0;
     //     overflow: visible;
-    //     clip: inherit; 
+    //     clip: inherit;
     //     top: 20px;
     //     left: 22px;
     //   }
@@ -1429,6 +1433,10 @@ Create date :
         font-size: 1.4rem;
       }
     }
+
+    &.type3 {
+      padding-top: 0;
+    }
   }
 
   .accordion > li .card {
@@ -1466,12 +1474,14 @@ Create date :
   }
   .modal-title {
     padding-bottom: 20px;
+    font-size: 2.2rem;
   }
   .modal-body hr {
     margin: 20px 0;
   }
   .box {
     padding: 20px;
+    margin-bottom: 20px;
   }
   .card .form-check-group {
     margin-top: 15px;
@@ -1498,18 +1508,26 @@ Create date :
     width: 100%;
     margin-top: 40px;
   }
+  .container + .card {
+    margin-top: 40px;
+  }
 
   .breadcrumb-add-nav {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 35px;
 
-    > nav {
+    .breadcrumb {
       margin-bottom: 30px;
     }
 
     .snb {
-      > li:first-child {
-        margin-left: 0;
+      > li {
+        font-size: 1.4rem;
+
+        &:first-child {
+          margin-left: 0;
+        }
       }
     }
   }
@@ -1555,5 +1573,120 @@ Create date :
         margin-bottom: 25px;
       }
     }
+  }
+  .area-submission {
+    padding-top: 35px;
+  }
+  .area-submission .card.type2 {
+    padding: 40px 20px;
+  }
+  .modal.type2 .modal-dialog {
+    width: calc(100% - 20px);
+  }
+  .flex-box {
+    flex-direction: column;
+
+    &.aic {
+      align-items: flex-start;
+    }
+
+    .btn.btn-white.btn-xsmall {
+      margin-top: 20px;
+    }
+  }
+  .btn.btn-xxxl {
+    width: 100%;
+  }
+
+  .tab-container .tab-list > .tab-button {
+    font-size: 2rem;
+  }
+  .tab-container .tabs-desc {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+  .select-group,
+  .form-wrap,
+  .group-file {
+    margin-top: 20px;
+  }
+  .select select.form-control.last {
+    border-left: 1px solid #ddd;
+    margin-top: 10px;
+  }
+  .select::after {
+    color: #7f7f7f;
+    content: "\e943";
+    font-family: "xeicon";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -8px;
+  }
+  .quick {
+    right: 20px;
+    bottom: 70px;
+    display: none;
+  }
+  .contents-title span {
+    margin-bottom: 10px;
+  }
+  button.close {
+    top: 20px;
+  }
+  [data-tooltip]:before {
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 68px;
+    width: 80vw;
+  }
+  .list > li {
+    font-size: 1.6rem;
+  }
+
+  .card.type2 > p.mt30 {
+    margin-top: 0;
+  }
+  .checkTrigger1-message,
+  .checkTrigger2-message {
+    font-size: 1.6rem;
+    margin-top: 10px;
+  }
+  .checkTrigger1,
+  .checkTrigger2 {
+    margin-top: 10px;
+  }
+  .list {
+    margin-top: 20px;
+  }
+  .btn-group.btn-group-triple .btn:nth-child(1),
+  .btn-group.btn-group-triple .btn:nth-child(2),
+  .btn-group.btn-group-triple .btn:nth-child(3) {
+    width: calc(33% - 12px);
+  }
+
+  .join-process.type2 {
+    flex-direction: row;
+    padding-bottom: 40px;
+  }
+  .join-process.type2 > li {
+    padding-left: 0;
+    font-size: 1.3rem;
+    height: inherit;
+    padding-top: 70px;
+    background-size: 60px;
+    background-position: top center;
+    text-align: center;
+    letter-spacing: -0.05em;
+  }
+  .join-process.type2 > li::before,
+  .join-process.type2 > li::after {
+    display: none;
+  }
+  .send-agree-title {
+    font-size: 2rem;
+  }
+  .send-agree-desc {
+    font-size: 1.6rem;
   }
 }
