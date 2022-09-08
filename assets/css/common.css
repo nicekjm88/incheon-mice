@@ -254,7 +254,37 @@ div::-webkit-scrollbar-thumb {
   border-radius: 3px;
 }
 
-/* font-size */
+/* utility css */
+.mt10 {
+  margin-top: 10px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mt50 {
+  margin-top: 50px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.mb50 {
+  margin-bottom: 50 px;
+}
 .fs12 {
   font-size: 1.2rem !important;
 }
@@ -287,10 +317,6 @@ div::-webkit-scrollbar-thumb {
 }
 .fs30 {
   font-size: 3rem !important;
-}
-
-.mt30 {
-  margin-top: 30px;
 }
 
 /* Skip to content */
@@ -769,6 +795,10 @@ button.close {
   color: #000;
   padding-bottom: 30px;
   line-height: 1;
+}
+.modal-title2 {
+  font-size: 2.5rem;
+  color: #006064;
 }
 .modal-body {
   position: relative;
