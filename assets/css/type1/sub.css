@@ -57,6 +57,12 @@ Create date :
   }
 }
 
+@media (max-width: 767px) {
+  .wrap-container {
+    min-height: inherit;
+  }
+}
+
 .contents-title {
   font-size: 6.5rem;
   font-family: "IncheonMICE";
@@ -1341,7 +1347,26 @@ Create date :
   }
 }
 
-@media (max-width: 1025px) {
+/* tablet */
+@media (max-width: 1180px) {
+  #wrap.intro .area-login .edge-round img {
+    max-width: 90%;
+  }
+  .history-navigation.vertical {
+    display: none !important;
+  }
+  .area-history .history .bg-txt {
+    font-size: 16rem;
+  }
+  #footer {
+    margin-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+/* mobile */
+@media (max-width: 768px) {
   .area-mypage,
   .area-join,
   .area-reset {

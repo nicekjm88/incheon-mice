@@ -395,12 +395,45 @@ Create date :
   }
 }
 
+@media (max-width: 1180px) {
+  #contents .section1 .banner .overlay-text strong,
+  #contents .section1 .banner .overlay-text p {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  #contents .section1 .banner .overlay-text p {
+    margin-top: 0;
+  }
+  #contents .section2 {
+    height: inherit;
+    padding: 110px 0;
+  }
+  #contents .section2 .slogan {
+    font-size: 6rem;
+  }
+  #contents .section2 .picture {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  #contents .section3 .slogan {
+    font-size: 6rem;
+  }
+  #contents .section3 .contact-us {
+    font-size: 2rem;
+    margin-top: 90px;
+  }
+}
+
 @media (max-width: 767px) {
   #contents .section1 {
-    height: inherit;
+    height: 100vh;
+  }
+  #contents .section1 .banner {
+    height: 100%;
   }
   #contents .section1 .banner .overlay-text {
-    padding-top: 0;
+    height: 100%;
+    margin-top: 0;
   }
   #contents .section1 .banner .overlay-text strong em {
     font-size: 4rem;

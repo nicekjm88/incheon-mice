@@ -27,7 +27,7 @@ Create date :
   z-index: 10;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #header h1 {
     top: 12px;
     left: 25px;
@@ -127,7 +127,7 @@ Create date :
   height: 30px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #header .gnb-wrap .utils {
     top: 24px;
     right: 25px;
@@ -148,7 +148,7 @@ Create date :
   transition: all 0.3s ease;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #header::before {
     height: 80px;
   }
@@ -184,7 +184,7 @@ Create date :
   min-height: inherit;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #header {
     height: 80px;
   }
@@ -413,7 +413,7 @@ Create date :
   margin: 0 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #footer .rule-list {
     margin-left: 0;
     -webkit-box-pack: center;
@@ -429,7 +429,7 @@ Create date :
   margin-top: 15px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #footer {
     border-top: 1px solid #eaeaea;
     padding: 30px 0;
@@ -453,7 +453,16 @@ Create date :
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1180px) {
+  #header h1 {
+    left: 20px;
+  }
+  #header .gnb-wrap .utils {
+    right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
   img {
     max-width: 100%;
   }

@@ -898,6 +898,7 @@ button.close {
   right: -4px;
   height: 60px;
   border: none;
+  border-radius: 0;
 }
 
 .group-file {
